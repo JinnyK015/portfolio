@@ -106,15 +106,39 @@ ul{
   border-radius: : 6px;
 }
 
+/* section common */
+
+.section{
+  padding: 50px;
+  text-align: center;
+}
+
 
 /* Home  */
 #home{
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: var(--color-light-white);
+  padding: 50px;
 }
 
 .home__avatar{
   width: 300px;
   border-radius: 50%;
 }
+
+.home__block span{
+  font-size:var(--font-large);
+  font-weight: var(--weight-bold);
+}
+
+.home__block {
+  margin-left: 30px;
+}
+.home__contect{
+  font-size: var(--font-medium);
+  
+}
+
+/* about me */
