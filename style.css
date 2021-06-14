@@ -69,7 +69,12 @@ ul{
   list-style: none;
   padding-left: 0;
 }
-
+button{
+  outline :none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
 /* NAV */
 
 #navbar{
@@ -114,13 +119,17 @@ ul{
 }
 
 
+
+
 /* Home  */
 #home{
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--color-light-white);
-  padding: 50px;
+  padding: 50px 0px;
+
+
 }
 
 .home__avatar{
@@ -134,11 +143,54 @@ ul{
 }
 
 .home__block {
-  margin-left: 30px;
+  padding:20px;
+  
+  
 }
 .home__contect{
   font-size: var(--font-medium);
-  
+  padding: 10px 0;
+
 }
 
+
+
 /* about me */
+
+.about__icon{
+  font-size:var(--font-large);
+}
+
+/* skill */
+
+#skills{
+  background-color: var(--color-light-white);
+}
+
+.skills{
+  text-align: left;
+  background-color: var(--color-dark-white);
+  padding:10px 30px;;
+}
+
+/* works */
+
+.work__categories{
+
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.category__btn{
+  border: 2px solid var(--color-dark-grey);
+  padding: 8px 20px;
+}
+
+.work__project{
+  display: flex;
+}
+.work__cover{
+  width:200px;
+  height: 200px;
+  background-color: #B2C7D5;
+
+}
