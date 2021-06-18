@@ -166,9 +166,6 @@ button{
 
 /* about me */
 
-.about__icon{
-  font-size:var(--font-large);
-}
 
 /* skill */
 
@@ -180,6 +177,20 @@ button{
   text-align: left;
   background-color: var(--color-dark-white);
   padding:10px 30px;;
+}
+
+
+.skills__list{
+  display: flex;
+  font-size:var(--font-large);
+  flex-wrap: wrap;
+  
+}
+.skill__icon{
+  padding:10px 20px;
+  margin : 10px ;
+  border-radius: 20px;
+  background-color: var(--color-white);
 }
 
 /* works */
