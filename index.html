@@ -27,11 +27,10 @@
     </div>
    
     <ul class="navbar__menu">
-        <li class="navbar__menu__Item">about</li>
-        <li class="navbar__menu__Item">skills</li>
-        <li class="navbar__menu__Item">sideproject</li>
-        <li class="navbar__menu__Item">work</li>
-        <li class="navbar__menu__Item">connect</li>
+        <a href="#home"><li class="navbar__menu__Item">about</li></a>
+        <a href="#skills"><li class="navbar__menu__Item">skills</li></a>
+        <a href="#work"><li class="navbar__menu__Item">work</li></a>
+        <a href="#connect"><li class="navbar__menu__Item">connect</li></a>      
     </ul>
       
 <!-- Toggle bar -->
@@ -49,9 +48,18 @@
         <img src ="img/pic_line.png" class ="home__avatar">
     </div>
    <div class="home__block">
-        <span class="home__title">Hello!</span><br>
-        <span class="home__scroll">I'm JinnyK</span>
-        <span class="home__title__crsur">|</span>
+        <h1>Hello!<br>
+            I'm <span class="home__title"
+                    data-wait="2500"
+                    data-words='["Front-end Developer.","Designer.","Creator"]'>JinnyK</span>
+<!-- data-wait is stopped curser time. -->
+<!-- date-words need to ''single dot for array inside"" comments.
+    and HTML doesen't read array but we will use in Js through JSON -->
+        </h1>
+     
+       
+
+
         <div class="home__contect">
             <i class="fab fa-linkedin"></i>
             <i class="fab fa-facebook-square"></i>
@@ -203,6 +211,7 @@
 
 
 <!-- coneection -->
+
 <section id="connect" class="section">
     <div class="section__container">
         <h1 class="sub__title">contact me!</h1>
@@ -222,5 +231,6 @@
       </p>
 </div>
 </section>   
+
 </body>
 </html>

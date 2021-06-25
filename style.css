@@ -11,25 +11,12 @@
         --color-black: #000000;
       
         /* Font size */
-        --font-large: 48px;
+        --font-large: 3rem;
         --font-medium: 28px;
         --font-regular: 18px;
         --font-small: 16px;
         --font-micro: 14px;
-      
-        /* Font weight */
-        --weight-bold: 700;
-        --weight-semi-bold: 600;
-        --weight-regular: 400;
-
-
-        /* Font size */
-        --font-large: 48px;
-        --font-medium: 28px;
-        --font-regular: 18px;
-        --font-small: 16px;
-        --font-micro: 14px;
-
+  
         /* Font weight */
         --weight-bold: 700;
         --weight-semi-bold: 600;
@@ -146,8 +133,6 @@ button{
   justify-content: center;
   background-color: var(--color-light-white);
   padding: 50px 0px;
-
-
 }
 
 .home__avatar{
@@ -162,9 +147,11 @@ button{
 
 .home__block {
   padding:20px;
-  
+  height: 100%;
   
 }
+
+
 .home__contect{
   font-size: var(--font-medium);
   padding: 10px 0;
@@ -237,8 +224,8 @@ button{
 
 
 .work__cover{
-  width: 300px;
-  height: 300px;
+  max-width: 300px;
+  max-height: 300px;
   background-color: var(--color-white);
   margin: 10px;
   position: relative;
@@ -315,6 +302,6 @@ button{
     text-align: center;
   }
 
-  
+ 
 
 }
