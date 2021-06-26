@@ -89,6 +89,7 @@ button{
 
 .navbar__menu__Item{
   padding: 4px 12px;
+  font-weight: var(--weight-semi-bold);
 }
 
 .navbar__menu__Item.active{
@@ -140,10 +141,31 @@ button{
   border-radius: 50%;
 }
 
+@keyframes blink {
+  from {opacity: 1;}
+  to {opacity:0;}
+}
+
 .home__block span{
   font-size:var(--font-large);
   font-weight: var(--weight-bold);
 }
+
+.home__block{
+  width: 50%;
+}
+
+
+.home__block:first-child{
+  text-align: right;
+}
+/* curser js effect */
+
+.home__title + span{
+  border-left: 0.15rem solid var(--color-dark-grey);
+  animation: blink 0.7s ease-in-out infinite;
+}
+
 
 .home__block {
   padding:20px;
