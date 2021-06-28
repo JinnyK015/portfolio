@@ -1,5 +1,19 @@
+'use strict'
+// navber scrolling color change
 
-// navber click scrolling 
+const navbar =  document.querySelector('#navbar');
+const navbarHeights = navbar.scrollHeight;
+document.addEventListener('scroll', () =>{
+ if(navbarHeights < window.scrollY){
+   navbar.classList.add('navbar-color');
+ } else{
+    navbar.classList.remove('navbar-color');
+ }
+}
+)
+
+
+// navber menu click scrolling 
 const nav_menu = document.querySelector('.navbar__menu');
 
 nav_menu.addEventListener('click', (event) => {
@@ -27,7 +41,6 @@ const typeWriter = function(txtEl, words, wait=2500) {
     //which word are going on. array counter
     this.wait = parseInt(wait, 10);
     //same as parameter wait but it need to integer.
-    console.log(this.wait, parseInt(wait, 10));
     this.type();
     //main arithmetic core.
     this.isDelet = false;  //After typing anim we need to delet anim. it for that.

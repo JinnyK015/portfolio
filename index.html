@@ -21,13 +21,12 @@
 <!-- Navi bar -->
 <nav id="navbar">
     <div class="navbar__log">
-        <!-- need to change bector img -->
-       
-        <a href="#">JinnyK</a>
+        <span>JinnyK</span>
     </div>
    
     <ul class="navbar__menu">
-        <li class="navbar__menu__Item" data-link="#about">about</li>
+        <li class="navbar__menu__Item" data-link="#home" active>Home</li>
+        <li class="navbar__menu__Item" data-link="#about" >about</li>
         <li class="navbar__menu__Item" data-link="#skills">skills</li>
         <li class="navbar__menu__Item" data-link="#work">work</li>
         <li class="navbar__menu__Item" data-link="#connect">connect</li>  
@@ -48,16 +47,16 @@
         <img src ="img/pic_line.png" class ="home__avatar">
     </div>
    <div class="home__block">
-        <h1>Hello! I'm JinnyK.<br>
-            I'm a <span class="home__title"
+        <h3>Hello!</h3>
+           <span> I'm <span class="home__title"
                     data-wait="2500"
-                    data-words='["Front-end Developer.","Designer.","Creator."]'>JinnyK</span>
+                    data-words='["JinnyK.", "a Front-end Developer.","a Designer.","a Creator."]'>JinnyK</span>
                     <span></span>
+            </span>
+            
 <!-- data-wait is stopped curser time. -->
 <!-- date-words need to ''single dot for array inside"" comments.
     and HTML doesen't read array but we will use in Js through JSON -->
-        </h1>
-     
        
 
 
@@ -68,6 +67,9 @@
             <i class="fab fa-twitter-square"></i>
         </div>
     </div>
+
+        
+
 </section>
 
 <!-- about -->
