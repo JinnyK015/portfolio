@@ -1,4 +1,20 @@
 'use strict'
+// scrolling move trnasparent
+const home = document.querySelector('#home');
+const homeHeight = home.scrollHeight;
+
+
+document.addEventListener('scroll', () => {
+ home.style.opacity = 1 -  window.scrollY / homeHeight;
+}
+     )
+
+
+
+
+
+
+
 // navber scrolling color change
 
 const navbar =  document.querySelector('#navbar');
