@@ -88,11 +88,10 @@ button{
   text-align: center;
 }
 
-.section__max{
+.section__container{
   max-width: 1000px;
   margin:auto;
 }
-
 
 
 
@@ -259,7 +258,7 @@ button{
   .skills{
     background-color: transparent;
   }
-  
+
 }
 
 /* Below 850px screen width */

@@ -5,14 +5,10 @@ const homeHeight = home.scrollHeight;
 
 
 document.addEventListener('scroll', () => {
- home.style.opacity = 1 -  window.scrollY / homeHeight;
+ home.style.opacity = 1.2 - window.scrollY / homeHeight;
+ 
 }
-     )
-
-
-
-
-
+)
 
 
 // navber scrolling color change
