@@ -1,72 +1,64 @@
 /* Home  */
-#home{
-    background-color: var(--color-light-white);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
-  }
-  
-  
-  #home h1{
-    margin: 0;
-  }
-  
-  
-  .home__block{
-    text-align: right;
-    width:45%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    
-  }
-  
-  .home__avatar{
-    width: 18.75rem;
-  
-  }
-  .home__text-container{
-    height: 18rem;
-    display: flex;
-    flex-direction: column;
-    width: 55%;
-    margin-left:1rem;
-    justify-content: center;
-    
-  }
-  .home__text{
-    padding-top: 10px;
-    width: 23rem;
-    height: 70%;
+#home {
+  background-color: var(--color-light-white);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  }
-  .home__text h1{
-    line-height:120%;
-  }
+.home__block {
+  text-align: right;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 
-  .home__icons{
-    font-size: var(--font-semi-lrg);
-    padding: 10px 0;
-    width:35%;
-    display: flex;
-    justify-content:space-around;
-    align-items: flex-end;
-    color: var(--color-dark-grey);
+.home__avatar {
+  width: 18.75rem;
+}
+
+.home__text-container {
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  margin-left: 1rem;
+  justify-content: center;
+}
+.home__text {
+  padding-top: 10px;
+  height: 70%;
+}
+
+.home__text h1 {
+  line-height: 120%;
+  margin: 0;
+}
+
+.home__icons {
+  font-size: var(--font-semi-lrg);
+  padding: 10px 0;
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  color: var(--color-dark-grey);
+}
+
+/* curser js effect */
+
+.home__title + span {
+  border-left: 0.15rem solid var(--color-dark-grey);
+  animation: blink 0.7s ease-in-out infinite;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
   }
-
-
-
-  
-  /* curser js effect */
-  
-  .home__title + span{
-    border-left: 0.15rem solid var(--color-dark-grey);
-    animation: blink 0.7s ease-in-out infinite;
+  to {
+    opacity: 0;
   }
-
-  @keyframes blink {
-    from {opacity: 1;}
-    to {opacity:0;}
-  }
+}

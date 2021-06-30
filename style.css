@@ -59,6 +59,7 @@ h3{
 body{
   margin: 0;
   font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 
 a{
@@ -240,6 +241,7 @@ button{
     display: flex;
     width: 100%;
     justify-content: center;
+    position: relative;
     
   }
 
