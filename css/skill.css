@@ -5,10 +5,16 @@
     background-color: var(--color-dark-white);
     height: 100vh;
   }
+
+  .sub__contents{
+    width: 80%;
+    text-align: center;
+    margin: 1em auto;
+  }
   
   .skills{
     text-align: left;
-    padding:10px 30px;;
+    padding: 0.4em 2em;
     background-color: var(--color-light-white);
   }
   
@@ -18,6 +24,7 @@
     text-align: center; 
     justify-content: space-between;
     flex-flow:wrap;
+    height: 50%;
   }
 
   .skill__icon--box{
@@ -38,5 +45,3 @@
     font-size:var(--font-micro);
   }
 
-
-  <i class="fas fa-arrow-circle-right"></i>

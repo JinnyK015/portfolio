@@ -201,6 +201,10 @@ button{
 
 /* Below 425px screen width */
 @media screen and (max-width: 425px) {
+  .section{
+    padding:0;
+  }
+
   .navbar__toggle-btn{
     display:block;
   }
@@ -251,10 +255,19 @@ button{
     justify-content:space-between;
     font-size: var(--font-Xlrg);
   }
+
+  .skills{
+    background-color: transparent;
+  }
+  
 }
 
 /* Below 850px screen width */
 @media screen and (max-width: 850px) and (min-width: 426px) {
+
+  .section{
+    padding:0;
+  }
   .navbar__toggle-btn{
     display:block;
   }
@@ -309,6 +322,13 @@ button{
     justify-content:space-between;
     font-size: var(--font-Xlrg);
   }
+
+  .skills{
+    background-color: transparent;
+  }
+
+
+  
 }
 
 
