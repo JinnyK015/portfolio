@@ -3,12 +3,11 @@
 const home = document.querySelector('#home');
 const homeHeight = home.scrollHeight;
 
-
 document.addEventListener('scroll', () => {
  home.style.opacity = 1.2 - window.scrollY / homeHeight;
- 
 }
 )
+
 
 
 // navber scrolling color change
@@ -23,6 +22,8 @@ document.addEventListener('scroll', () =>{
  }
 }
 )
+// navbar menu popup
+
 
 
 // navber menu click scrolling 
@@ -39,7 +40,7 @@ nav_menu.addEventListener('click', (event) => {
     scrollTo.scrollIntoView({behavior: "smooth"});
 })
 
-//navbar fixed and trans
+
 
 
 // Home typing text function part

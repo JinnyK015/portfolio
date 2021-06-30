@@ -1,77 +1,72 @@
-  /* import url */
-  @import "css/nav.css";
-  @import "css/home.css";
-  @import "css/skill.css";
+/* import url */
+@import "css/nav.css";
+@import "css/home.css";
+@import "css/skill.css";
 
 /* Global */
-:root { 
-        /* Color */
-        --color-white: #ffffff;
-        --color-light-white: #eeeeee;
-        --color-dark-white: #bdbdbd;
-        --color-dark-grey: #4d4d4d;
-        --color-grey: #616161;
-        --color-light-grey: #7c7979;
-        --color-orange: #feb546;
-        --color-black: #000000;
-      
-        /* Font size */
-        --font-Xlrg: 3rem;
-        --font-lrg: 2.6rem;
-        --font-semi-lrg: 2.25rem;
-        --font-medium: 1.75rem;
-        --font-regular: 18px;
-        --font-small: 16px;
-        --font-micro: 14px;
-  
-        /* Font weight */
-        --weight-bold: 700;
-        --weight-semi-bold: 600;
-        --weight-regular: 400;
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+  --color-orange: #feb546;
+  --color-black: #000000;
 
-        /* Annimation */
-        --anim-duration: 300ms;
-                  
-      }
+  /* Font size */
+  --font-Xlrg: 3rem;
+  --font-lrg: 2.6rem;
+  --font-semi-lrg: 2.25rem;
+  --font-medium: 1.75rem;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
 
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
 
-
-
+  /* Annimation */
+  --anim-duration: 300ms;
+}
 
 /* Universal Tag */
 * {
- box-sizing: border-box;
+  box-sizing: border-box;
 }
 /* typography */
-h1{
+h1 {
   font-size: var(--font-Xlrg);
   font-weight: var(--weight-bold);
   color: var(--color-black);
   margin: 16px 0;
 }
-h3{
+h3 {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
   color: var(--color-black);
-  margin:8px 0;
+  margin: 8px 0;
 }
 
-body{
+body {
   margin: 0;
-  font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+  font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-ul{
+ul {
   list-style: none;
   padding-left: 0;
 }
-button{
-  outline :none;
+button {
+  outline: none;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -79,80 +74,69 @@ button{
 
 /* section common */
 
-.section{
+.section {
   padding: 50px;
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.section__container{
+.section__container {
   max-width: 1000px;
-  margin:auto;
+  margin: auto;
 }
-
-
 
 /* works */
 
-.work__categories{
-
+.work__categories {
   padding: 10px;
   margin-bottom: 10px;
 }
-.category__btn{
+.category__btn {
   border: 2px solid var(--color-dark-grey);
   padding: 8px 20px;
 }
 
-.category__count{
+.category__count {
   background-color: var(--color-orange);
   border-radius: 50%;
   width: 20px;
   height: 20px;
-  color:var(--color-white);
+  color: var(--color-white);
   display: inline-block;
   line-height: 20px;
-  margin-left:4px;
-
-
-
+  margin-left: 4px;
 }
 
-
-.work__project{
+.work__project {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-
-.work__cover{
+.work__cover {
   max-width: 300px;
   max-height: 300px;
   background-color: var(--color-white);
   margin: 10px;
   position: relative;
-  
 }
-.project__img{
-  width:100%;
-  
-
+.project__img {
+  width: 100%;
 }
 
-.project__description{
+.project__description {
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
-  height:100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   transition: all var(--anim-duration) ease-in;
 }
 
@@ -161,195 +145,182 @@ button{
   transform: translateY(0px);
 }
 
-
-.project__description h3{
-  color:var(--color-white);
+.project__description h3 {
+  color: var(--color-white);
 }
-.project__description h3:after{
-  content:'';
+.project__description h3:after {
+  content: "";
   display: block;
   width: 100px;
-  height:1px;
+  height: 1px;
   background-color: var(--color-white);
   position: relative;
-  left:50%;
+  left: 50%;
   margin-top: 10px;
-  margin-left:-50px;
+  margin-left: -50px;
 }
 
-.project__simbol{
+.project__simbol {
   margin-top: 5px;
   display: inline;
 }
 
 /* about me */
 
-#about{
-  height:100vh;
+#about {
+  height: 100vh;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   flex-direction: column;
 }
 
-
 /* contact me */
 
-#connect{
+#connect {
   background-color: var(--color-light-grey);
 }
 
 /* Below 425px screen width */
 @media screen and (max-width: 425px) {
-  .section{
-    padding:0;
+  .section {
+    padding: 0;
   }
 
-  .navbar__toggle-btn{
-    display:block;
+  .navbar__toggle-btn {
+    display: block;
   }
 
-  #navbar{
+  #navbar {
     flex-direction: column;
     align-items: flex-start;
-    padding : 2px 16px;
+    padding: 2px 16px;
   }
-  .navbar__menu{
+  .navbar__menu {
     flex-direction: column;
     text-align: center;
-    width:100%;
-    display:none;
+    width: 100%;
+    display: none;
   }
 
-
-  #home{
+  #home {
     flex-direction: column;
-    padding-top: 70px;
+    padding-top: 0;
     width: 100%;
   }
 
-  .home__block{
+  .home__block {
     display: flex;
     width: 100%;
-    justify-content: center;
-    position: relative;
-    
-  }
-
- 
-  .home__text-container{
-    width:70%;
     height: 40%;
-
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
   }
-  
-  .home__text{
+
+  .home__avatar {
+    width: 16rem;
+  }
+
+  .home__text-container {
+    width: 70%;
+    height: 40%;
+  }
+
+  .home__text {
     height: 60%;
   }
-  .home__text h1{
-    font-size:var(--font-semi-lrg);
+  .home__text h1 {
+    font-size: var(--font-semi-lrg);
   }
-  .home__icons{
+  .home__icons {
     display: flex;
-    width:100%;
-    justify-content:space-between;
+    width: 100%;
+    justify-content: space-between;
     font-size: var(--font-Xlrg);
   }
 
-  .skills{
+  .skills {
     background-color: transparent;
   }
-
 }
 
 /* Below 850px screen width */
 @media screen and (max-width: 850px) and (min-width: 426px) {
-
-  .section{
-    padding:0;
+  .section {
+    padding: 0;
   }
-  .navbar__toggle-btn{
-    display:block;
+  .navbar__toggle-btn {
+    display: block;
   }
 
-  #navbar{
+  #navbar {
     flex-direction: column;
     align-items: flex-start;
-    padding : 2px 16px;
+    padding: 2px 16px;
   }
- 
-  .navbar__menu{
+
+  .navbar__menu {
     flex-direction: column;
     text-align: center;
-    width:100%;
-    display:none;
+    width: 100%;
+    display: none;
   }
 
-
-  #home{
+  #home {
     flex-direction: column;
     padding-top: 70px;
     width: 100%;
   }
 
-  .home__block{
+  .home__block {
     display: flex;
     width: 100%;
     justify-content: center;
-    
   }
 
- 
-  .home__text-container{
-    width:64%;
+  .home__text-container {
+    width: 64%;
     height: 40%;
-    margin:0;
-  }
-  
-  .home__text{
-    height: 60%;
-   
+    margin: 0;
   }
 
-  .home__text h1{
+  .home__text {
+    height: 60%;
+  }
+
+  .home__text h1 {
     font-size: var(--font-semi-lrg);
   }
 
-
-  .home__icons{
+  .home__icons {
     display: flex;
-    width:100%;
-    justify-content:space-between;
+    width: 100%;
+    justify-content: space-between;
     font-size: var(--font-Xlrg);
   }
 
-  .skills{
+  .skills {
     background-color: transparent;
   }
-
-
-  
 }
 
-
 @media screen and (min-width: 1200px) {
-  .home__text-container{
+  .home__text-container {
     display: flex;
     flex-direction: column;
     width: 60%;
-    margin-left:1rem;
+    margin-left: 1rem;
     justify-content: center;
     height: auto;
-    
   }
-  .home__text{
+  .home__text {
     padding-top: 10px;
     width: 100%;
     height: inherit;
   }
-  
-  .home__icons{
+
+  .home__icons {
     font-size: var(--font-lrg);
     padding: 1rem 0;
-    
   }
 }
