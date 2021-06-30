@@ -1,7 +1,7 @@
   /* import url */
   @import "css/nav.css";
   @import "css/home.css";
-  
+  @import "css/skill.css";
 
 /* Global */
 :root { 
@@ -77,12 +77,14 @@ button{
   cursor: pointer;
 }
 
-
-
 /* section common */
 
 .section{
   padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
   text-align: center;
 }
 
@@ -93,35 +95,6 @@ button{
 
 
 
-
-/* about me */
-
-
-/* skill */
-
-#skills{
-  background-color: var(--color-light-white);
-}
-
-.skills{
-  text-align: left;
-  background-color: var(--color-dark-white);
-  padding:10px 30px;;
-}
-
-
-.skills__list{
-  display: flex;
-  font-size:var(--font-Xlrg);
-  flex-wrap: wrap;
-  
-}
-.skill__icon{
-  padding:10px 20px;
-  margin : 10px ;
-  border-radius: 20px;
-  background-color: var(--color-white);
-}
 
 /* works */
 
@@ -210,7 +183,21 @@ button{
   display: inline;
 }
 
+/* about me */
 
+#about{
+  height:100vh;
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+}
+
+
+/* contact me */
+
+#connect{
+  background-color: var(--color-light-grey);
+}
 
 /* Below 425px screen width */
 @media screen and (max-width: 425px) {
