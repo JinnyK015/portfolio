@@ -2,6 +2,7 @@
 @import "css/nav.css";
 @import "css/home.css";
 @import "css/skill.css";
+@import "css/project.css";
 
 /* Global */
 :root {
@@ -37,6 +38,7 @@
 * {
   box-sizing: border-box;
 }
+
 /* typography */
 h1 {
   font-size: var(--font-Xlrg);
@@ -72,6 +74,10 @@ button {
   cursor: pointer;
 }
 
+a:visited{
+  color: rgb(245, 245, 245);
+}
+
 /* section common */
 
 .section {
@@ -88,81 +94,23 @@ button {
   margin: auto;
 }
 
-/* works */
-
-.work__categories {
-  padding: 10px;
-  margin-bottom: 10px;
-}
-.category__btn {
-  border: 2px solid var(--color-dark-grey);
-  padding: 8px 20px;
-}
-
-.category__count {
-  background-color: var(--color-orange);
+.arrowTop{
+  position:fixed;
+  bottom: 2em;
+  right: 2em;
+  background-color:var(--color-light-grey);
+  width: 3.8em;
+  height: 3.8em;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  color: var(--color-white);
-  display: inline-block;
-  line-height: 20px;
-  margin-left: 4px;
-}
-
-.work__project {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.work__cover {
-  max-width: 300px;
-  max-height: 300px;
-  background-color: var(--color-white);
-  margin: 10px;
-  position: relative;
-}
-.project__img {
-  width: 100%;
-}
-
-.project__description {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: all var(--anim-duration) ease-in;
-}
-
-.project:hover .project__description {
+  border:1px solid var(--color-dark-white);
+  color:var(--color-light-white);
   opacity: 0;
-  transform: translateY(0px);
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
 }
-
-.project__description h3 {
-  color: var(--color-white);
-}
-.project__description h3:after {
-  content: "";
-  display: block;
-  width: 100px;
-  height: 1px;
-  background-color: var(--color-white);
-  position: relative;
-  left: 50%;
-  margin-top: 10px;
-  margin-left: -50px;
-}
-
-.project__simbol {
-  margin-top: 5px;
-  display: inline;
+.arrowTop.visible{
+  opacity: 1;
+  pointer-events: visible;
 }
 
 /* about me */
@@ -172,6 +120,7 @@ button {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  background-color:teal;
 }
 
 /* contact me */
@@ -302,6 +251,10 @@ button {
   .skills {
     background-color: transparent;
   }
+
+  #projects{
+    height: auto;
+}
 }
 
 @media screen and (min-width: 1200px) {
@@ -323,4 +276,7 @@ button {
     font-size: var(--font-lrg);
     padding: 1rem 0;
   }
+
+  #projects{
+    height: auto;
 }

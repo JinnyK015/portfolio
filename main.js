@@ -1,4 +1,23 @@
 'use strict'
+// toggle scrolling move
+const arrowTop = document.querySelector('.arrowTop');
+
+arrowTop.addEventListener('click', () =>{
+    const scrollToHome = document.querySelector('#home');
+    scrollToHome.scrollIntoView({behavior: "smooth"});
+})
+
+document.addEventListener('scroll', () => {
+    console.log(window.scrollY , homeHeight/2);
+    if(window.scrollY > homeHeight/2){
+        arrowTop.classList.add('visible');
+    } else {
+        arrowTop.classList.remove('visible');
+    }}
+   )
+
+
+
 // scrolling move trnasparent
 const home = document.querySelector('#home');
 const homeHeight = home.scrollHeight;
@@ -28,7 +47,6 @@ document.addEventListener('scroll', () =>{
 
 // navber menu click scrolling 
 const nav_menu = document.querySelector('.navbar__menu');
-
 nav_menu.addEventListener('click', (event) => {
     const target = event.target;
     const link = target.dataset.link;
