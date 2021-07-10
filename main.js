@@ -8,7 +8,7 @@ arrowTop.addEventListener('click', () =>{
 })
 
 document.addEventListener('scroll', () => {
-    console.log(window.scrollY , homeHeight/2);
+
     if(window.scrollY > homeHeight/2){
         arrowTop.classList.add('visible');
     } else {
@@ -21,9 +21,14 @@ document.addEventListener('scroll', () => {
 // scrolling move trnasparent
 const home = document.querySelector('#home');
 const homeHeight = home.scrollHeight;
+const screenWidth = window.innerWidth;
+
+console.log(screenWidth);
 
 document.addEventListener('scroll', () => {
- home.style.opacity = 1.2 - window.scrollY / homeHeight;
+    if(screenWidth > 425){
+        home.style.opacity = 1.2 - window.scrollY / homeHeight;
+    }
 }
 )
 

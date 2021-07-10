@@ -110,7 +110,7 @@ a:visited{
 }
 .arrowTop.visible{
   opacity: 1;
-  pointer-events: visible;
+  pointer-events: auto;
 }
 
 /* about me */
