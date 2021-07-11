@@ -27,7 +27,7 @@ console.log(screenWidth);
 
 document.addEventListener('scroll', () => {
     if(screenWidth > 425){
-        home.style.opacity = 1.2 - window.scrollY / homeHeight;
+        home.style.opacity = 1 - window.scrollY / homeHeight;
     }
 }
 )
