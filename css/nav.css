@@ -19,8 +19,6 @@
     
   }
   
-  
-  
   .navbar__log{
     font-size: var(--font-medium);
     font-weight:var(--weight-bold);
@@ -50,6 +48,14 @@
   
   /* navbar Toggle */
   .navbar__toggle-btn{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: var(--color-dark-grey);
+    display: none;
+  }
+
+  .navbar__toggle-close{
     position: absolute;
     right: 15px;
     top: 15px;

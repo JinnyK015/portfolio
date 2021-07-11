@@ -1,4 +1,6 @@
 'use strict'
+
+
 // toggle scrolling move
 const arrowTop = document.querySelector('.arrowTop');
 
@@ -14,7 +16,7 @@ document.addEventListener('scroll', () => {
     } else {
         arrowTop.classList.remove('visible');
     }}
-   )
+)
 
 
 
@@ -23,7 +25,7 @@ const home = document.querySelector('#home');
 const homeHeight = home.scrollHeight;
 const screenWidth = window.innerWidth;
 
-console.log(screenWidth);
+
 
 document.addEventListener('scroll', () => {
     if(screenWidth > 425){
@@ -46,7 +48,6 @@ document.addEventListener('scroll', () =>{
  }
 }
 )
-// navbar menu popup
 
 
 
@@ -63,6 +64,26 @@ nav_menu.addEventListener('click', (event) => {
     scrollTo.scrollIntoView({behavior: "smooth"});
 })
 
+//navbar menu pop up
+const togglebtn = document.querySelector('.navbar__toggle-btn');
+const toggleClose = document.querySelector('.navbar__toggle-close');
+const nav_item = document.querySelectorAll('.navbar__menu__Item');
+
+toggleClose.addEventListener('click', ()=>{
+    nav_menu.classList.remove('open');
+    togglebtn.style.display ='block';
+    toggleClose.style.display = 'none';
+})
+
+togglebtn.addEventListener('click', ()=>{
+    const nav_csslist = nav_menu.classList;
+    if(!nav_csslist.contains('opne')){
+        nav_csslist.toggle('open');
+        togglebtn.style.display ='none';
+        toggleClose.style.display = 'block';
+    }
+
+})
 
 
 
