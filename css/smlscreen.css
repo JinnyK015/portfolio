@@ -1,0 +1,77 @@
+/* Below 425px screen width */
+@media screen and (max-width: 425px) {
+  .section {
+    padding: 0;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2px 16px;
+    background-color: rgba(238, 238, 238, 0.9);
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .navbar__menu.open {
+    display: block;
+  }
+  .navbar__menu__Item {
+    padding: 1rem;
+  }
+
+  input[id="menu__icon"] {
+    display: none;
+  }
+  .nav__toggle-btn {
+    display: block;
+  }
+  .menu__icon__bar {
+    display: block;
+  }
+  .menu__icon__bar span {
+    display: block;
+  }
+
+  #home {
+    flex-direction: column;
+    padding-top: 0;
+    width: 100%;
+  }
+  .home__block {
+    display: flex;
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+  }
+  .home__avatar {
+    width: 16rem;
+  }
+  .home__text-container {
+    width: 70%;
+    height: 40%;
+  }
+
+  .home__text {
+    height: 60%;
+  }
+  .home__text h1 {
+    font-size: var(--font-semi-lrg);
+  }
+  .home__icons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: var(--font-Xlrg);
+  }
+
+  .skills {
+    background-color: transparent;
+  }
+}
