@@ -135,22 +135,13 @@ a:visited{
     padding: 0;
   }
 
-  .navbar__toggle-btn {
-    display: block;
-  }
-
-  .navbar__toggle-close{
-    display: none;
-  }
-
   #navbar {
-    flex-direction: column;
-    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 2px 16px;
-    background-color: var(--color-light-white);
+    background-color: var(--light-white);
   }
-
-
   .navbar__menu {
     flex-direction: column;
     text-align: center;
@@ -160,10 +151,16 @@ a:visited{
   .navbar__menu__Item{
     padding: 1rem;
   }
-  .navbar__menu.open{
+  .nav__toggle-btn{
     display: block;
   }
-
+  input[id="menu__icon"] + label{
+    display:block;
+  }
+  
+  input[id="menu__icon"] + label span{
+    display:block;
+  }
 
   #home {
     flex-direction: column;
@@ -212,15 +209,12 @@ a:visited{
   .section {
     padding: 0;
   }
-  .navbar__toggle-btn {
-    display: block;
-  }
 
   #navbar {
     flex-direction: column;
     align-items: flex-start;
     padding: 2px 16px;
-    background-color: var(--color-light-white);
+    background-color: rgba(238, 238, 238, 0.9);
   }
 
   .navbar__menu {
@@ -229,13 +223,23 @@ a:visited{
     width: 100%;
     display: none;
   }
-  .navbar__menu__Item{
-    padding: 1rem;
-  }
   .navbar__menu.open{
     display: block;
   }
-
+  
+  .navbar__menu__Item{
+    padding: 1rem;
+  }
+  .nav__toggle-btn{
+    display: block;
+  }
+  input[id="menu__icon"] + label{
+    display:block;
+  }
+  
+  input[id="menu__icon"] + label span{
+    display:block;
+  }
 
   #home {
     flex-direction: column;

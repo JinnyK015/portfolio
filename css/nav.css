@@ -15,7 +15,7 @@
   }
   
   #navbar.navbar-color {
-    background-color: var(--color-light-white);
+    background-color: rgba(238, 238, 238, 0.9);
     
   }
   
@@ -47,7 +47,71 @@
   }
   
   /* navbar Toggle */
-  .navbar__toggle-btn{
+
+.nav__toggle-btn{
+    display: none;
+    position: absolute;
+    right: 1.3rem;
+    top: 1.3rem;
+}
+  
+input[id="menu__icon"] {
+  display:none;
+}
+input[id="menu__icon"] + label{
+  display:none;
+  width:1.75rem;
+  height:1.5rem;
+  position: relative;
+  cursor: pointer;
+}
+
+input[id="menu__icon"] + label span{
+  display:none;
+  position: absolute;
+  width: 100%;
+  height: .25rem;
+  border-radius: 0.6rem;
+  background-color: var(--color-dark-grey);
+  transition: all .35s;
+}
+
+input[id="menu__icon"] + label span:nth-child(1){
+  top:0;
+
+}
+input[id="menu__icon"] + label span:nth-child(2){
+  top:50%;
+  transform: translateY(-50%); /* 중간값으로 정렬하기위해서 시작점이 상단으로 기본세팅된것을 억지로 내려주기위함. */
+}
+input[id="menu__icon"] + label span:nth-child(3){
+  bottom:0;
+  
+}
+/* animation for checked transition */
+
+input[id="menu__icon"]:checked + label span:nth-child(1){
+  top:50%;
+  transform: translateY(-50%) rotate(-45deg) ;
+}
+input[id="menu__icon"]:checked + label span:nth-child(2){
+  opacity:0;
+}
+input[id="menu__icon"]:checked + label span:nth-child(3){
+  bottom:50%;
+  transform:translateY(50%) rotate(45deg);
+  
+}
+
+
+
+
+
+
+
+
+
+  /* .navbar__toggle-btn{
     position: absolute;
     right: 15px;
     top: 15px;
@@ -62,4 +126,4 @@
     color: var(--color-dark-grey);
     display: none;
   }
-  
+   */

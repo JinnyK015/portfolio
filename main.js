@@ -64,25 +64,16 @@ nav_menu.addEventListener('click', (event) => {
     scrollTo.scrollIntoView({behavior: "smooth"});
 })
 
-//navbar menu pop up
-const togglebtn = document.querySelector('.navbar__toggle-btn');
-const toggleClose = document.querySelector('.navbar__toggle-close');
-const nav_item = document.querySelectorAll('.navbar__menu__Item');
+// navbar toggle menu down
 
-toggleClose.addEventListener('click', ()=>{
-    nav_menu.classList.remove('open');
-    togglebtn.style.display ='block';
-    toggleClose.style.display = 'none';
-})
+const menuicon = document.querySelector("#menu__icon");
 
-togglebtn.addEventListener('click', ()=>{
-    const nav_csslist = nav_menu.classList;
-    if(!nav_csslist.contains('opne')){
-        nav_csslist.toggle('open');
-        togglebtn.style.display ='none';
-        toggleClose.style.display = 'block';
+menuicon.addEventListener('click', (e)=>{
+    if(menuicon.checked === true){
+        nav_menu.classList.add('open');
+    } else { 
+        nav_menu.classList.remove('open');
     }
-
 })
 
 
