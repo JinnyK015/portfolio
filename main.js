@@ -65,7 +65,6 @@ nav_menu.addEventListener('click', (event) => {
 })
 
 // navbar toggle menu down
-
 const menuicon = document.querySelector("#menu__icon");
 
 menuicon.addEventListener('click', (e)=>{
@@ -75,7 +74,6 @@ menuicon.addEventListener('click', (e)=>{
         nav_menu.classList.remove('open');
     }
 })
-
 
 
 // Home typing text function part

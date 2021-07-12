@@ -151,14 +151,18 @@ a:visited{
   .navbar__menu__Item{
     padding: 1rem;
   }
+
+  input[id="menu__icon"] {
+    display:none;
+  }
   .nav__toggle-btn{
     display: block;
   }
-  input[id="menu__icon"] + label{
+  .menu__icon__bar{
     display:block;
   }
   
-  input[id="menu__icon"] + label span{
+  .menu__icon__bar span{
     display:block;
   }
 
@@ -230,16 +234,21 @@ a:visited{
   .navbar__menu__Item{
     padding: 1rem;
   }
+
+  input[id="menu__icon"] {
+    display:none;
+  }
   .nav__toggle-btn{
     display: block;
   }
-  input[id="menu__icon"] + label{
+  .menu__icon__bar{
     display:block;
   }
   
-  input[id="menu__icon"] + label span{
+  .menu__icon__bar span{
     display:block;
   }
+
 
   #home {
     flex-direction: column;
