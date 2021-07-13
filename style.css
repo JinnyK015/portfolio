@@ -102,11 +102,15 @@ a:visited {
   width: 3.8em;
   height: 3.8em;
   border-radius: 50%;
+  text-align: center;
   border: 1px solid var(--color-dark-white);
   color: var(--color-light-white);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease-in-out;
+}
+.arrowTop i{
+  font-size: 2rem;
 }
 .arrowTop.visible {
   opacity: 1;
@@ -218,6 +222,7 @@ a:visited {
 
 /* Below 425px screen width */
 @media screen and (max-width: 425px) {
+
   #home {
     padding-top: 0;
   }
@@ -233,11 +238,15 @@ a:visited {
     width: 70%;
     height: 40%;
   }
-
-  .arrowTop {
-    font-size: 10px;
+  .arrowTop{
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  .arrowTop i{
+    font-size: 1rem;
   }
 }
+
 
 @media screen and (min-width: 1200px) {
   .home__text-container {
