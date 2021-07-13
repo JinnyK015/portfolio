@@ -209,11 +209,15 @@ a:visited {
   #projects {
     height: auto;
   }
+
+  .arrowTop {
+    bottom: 1em;
+    right: 1em;
+  }
 }
 
 /* Below 425px screen width */
 @media screen and (max-width: 425px) {
-
   #home {
     padding-top: 0;
   }
@@ -230,8 +234,10 @@ a:visited {
     height: 40%;
   }
 
+  .arrowTop {
+    font-size: 10px;
+  }
 }
-
 
 @media screen and (min-width: 1200px) {
   .home__text-container {
