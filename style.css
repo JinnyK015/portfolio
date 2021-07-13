@@ -223,6 +223,11 @@ a:visited {
 /* Below 425px screen width */
 @media screen and (max-width: 425px) {
 
+  #skills{
+    height: auto;
+  }
+
+
   #home {
     padding-top: 0;
   }
