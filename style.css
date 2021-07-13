@@ -3,7 +3,6 @@
 @import "css/home.css";
 @import "css/skill.css";
 @import "css/project.css";
-@import "css/smlscreen.css";
 
 /* Global */
 :root {
@@ -130,8 +129,9 @@ a:visited {
   background-color: var(--color-light-grey);
 }
 
+/* ✳✳❇❇❇❇❇❇❇❇❇✳✳✳✳✳✳ */
 /* Below 850px screen width */
-@media screen and (max-width: 850px) and (min-width: 426px) {
+@media screen and (max-width: 850px) {
   .section {
     padding: 0;
   }
@@ -210,6 +210,28 @@ a:visited {
     height: auto;
   }
 }
+
+/* Below 425px screen width */
+@media screen and (max-width: 425px) {
+
+  #home {
+    padding-top: 0;
+  }
+  .home__block {
+    height: 40%;
+    align-items: flex-end;
+    position: relative;
+  }
+  .home__avatar {
+    width: 16rem;
+  }
+  .home__text-container {
+    width: 70%;
+    height: 40%;
+  }
+
+}
+
 
 @media screen and (min-width: 1200px) {
   .home__text-container {
