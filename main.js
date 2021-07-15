@@ -5,8 +5,7 @@
 const arrowTop = document.querySelector('.arrowTop');
 
 arrowTop.addEventListener('click', () =>{
-    const scrollToHome = document.querySelector('#home');
-    scrollToHome.scrollIntoView({behavior: "smooth"});
+    scrollTo('#home');
 })
 
 document.addEventListener('scroll', () => {
@@ -17,6 +16,11 @@ document.addEventListener('scroll', () => {
         arrowTop.classList.remove('visible');
     }}
 )
+
+function scrollTo (selector) {
+    const scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({behavior: "smooth"});
+}
 
 
 
@@ -57,11 +61,8 @@ nav_menu.addEventListener('click', (event) => {
     const target = event.target;
     const link = target.dataset.link;
     if(link == null){
-        return;
-    }
-    
-    const scrollTo = document.querySelector(link);
-    scrollTo.scrollIntoView({behavior: "smooth"});
+        return;}
+    scrollTo(link);
 })
 
 // navbar toggle menu down
