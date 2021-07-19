@@ -249,9 +249,14 @@ a:visited {
     width: 2em;
     height: 2em;
     line-height: 2em;
+    bottom: 3em;
   }
+  
   .arrowTop i {
     font-size: 1.2em;
+  }
+  .skills{
+    padding: 0 10px;
   }
 }
 
