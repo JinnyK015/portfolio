@@ -112,7 +112,7 @@ input#menu__icon:checked ~ nav label span:nth-child(3) {
   transition: all 0.35s;
   opacity: 0;
   visibility: hidden;
-  z-index: 1;
+  z-index: 4;
 }
 
 input#menu__icon:checked ~ .background {
