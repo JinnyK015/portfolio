@@ -46,7 +46,7 @@
 /* unlock Mark */
 
   .comingsoon {
-  background-color: var(--color-dark-white);
+  background-color: var(--color-med-white);
   width: 5rem;
   height: 5rem;
   font-size: var(--font-Xlrg);
@@ -58,8 +58,22 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: 2;
 }
+.loading{
+  width: 4.2rem;
+  height: 4.2rem;
+  position:absolute;
+  border: 0.5rem solid var(--color-light-grey);
+  border-radius:50%;
+  border-top: 0.5rem solid var(--color-dark-grey);
+  animation: loading 5s linear infinite;
+}
+
 .comingsoon i,
 .comingsoon img{
   opacity: .5;
 }
 
+@keyframes loading {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

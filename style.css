@@ -9,6 +9,7 @@
   /* Color */
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
+  --color-med-white: #cfcfcf;
   --color-dark-white: #bdbdbd;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
@@ -247,9 +248,12 @@ a:visited {
     width: 80%;
     height: 40%;
   }
+  /* 이거해서도 안되면 그냥 비주얼 없애버리기 ㅇㅇ... */
   .arrowTop {
-    width: 2em;
-    height: 2em;
+    width: 3em;
+    height: 3em;
+    bottom: 4em;
+    right: 2em;
     flex-direction: flex;
     justify-content: center;
     align-items: center;
