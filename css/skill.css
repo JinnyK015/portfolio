@@ -20,7 +20,8 @@
 .skills__list {
   display: flex;
   text-align: center;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-evenly;
   flex-flow: wrap;
   height: 50%;
 }

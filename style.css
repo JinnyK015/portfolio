@@ -260,7 +260,7 @@ a:visited {
   }
 
   .arrowTop i {
-    font-size: var(--font-medium);
+    font-size: var(-);
   }
   .skills{
     padding: 0 10px;
