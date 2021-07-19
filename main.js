@@ -119,6 +119,8 @@ typeWriter.prototype.type = function(){
     if(this.isDelet){
         typeSpeed /= 2;
     }
+    
+
 
     //if word is finished work.
     if(!this.isDelet && this.txt === fulltxt){

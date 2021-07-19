@@ -190,8 +190,9 @@ a:visited {
 
   .home__text-container {
     width: 64%;
-    height: 40%;
+    height: 50%;
     margin: 0;
+    justify-content: left;
   }
 
   .home__text {
@@ -241,19 +242,18 @@ a:visited {
     width: 16rem;
   }
   .home__text-container {
-    width: 70%;
+    width: 80%;
     height: 40%;
   }
-  .arrowTop{
+  .arrowTop {
     width: 2em;
     height: 2em;
-    line-height:2em;
+    line-height: 2em;
   }
   .arrowTop i {
-    font-size:1.2em;
+    font-size: 1.2em;
   }
 }
-
 
 @media screen and (min-width: 1200px) {
   .home__text-container {
@@ -277,5 +277,30 @@ a:visited {
 
   #projects {
     height: 100vh;
+  }
+}
+
+/* Below 620px screen height */
+
+@media screen and (max-height: 620px) {
+  #home {
+    height: 120vh;
+  }
+
+  .home__column {
+    height: 100%;
+  }
+
+  .home__block {
+    margin-top: 65px;
+  }
+
+  .home__text h1 {
+    font-size: var(--font-medium);
+  }
+
+  .home__icons {
+    margin-top: 1rem;
+    font-size: var(--font-medium);
   }
 }
