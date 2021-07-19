@@ -54,8 +54,8 @@ document.addEventListener('scroll', () =>{
 )
 
 
-
 // navber menu click scrolling 
+const checkBox = document.querySelector('#menu__icon');
 const nav_menu = document.querySelector('.navbar__menu');
 nav_menu.addEventListener('click', (event) => {
     const target = event.target;
@@ -63,7 +63,11 @@ nav_menu.addEventListener('click', (event) => {
     if(link == null){
         return;}
     scrollTo(link);
+    nav_menu.classList.remove('open');
+    checkBox.checked = false;
 })
+
+
 
 // navbar toggle menu down
 const menuicon = document.querySelector("#menu__icon");
