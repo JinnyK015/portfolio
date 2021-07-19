@@ -37,6 +37,8 @@
 
 /* Universal Tag */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -45,13 +47,13 @@ h1 {
   font-size: var(--font-Xlrg);
   font-weight: var(--weight-bold);
   color: var(--color-black);
-  margin: 16px 0;
+  margin: 1rem 0;
 }
 h3 {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
   color: var(--color-black);
-  margin: 8px 0;
+  margin: 0.5rem 0;
 }
 
 body {
@@ -64,6 +66,10 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: var(--color-dark-grey);
+}
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -73,10 +79,6 @@ button {
   background-color: transparent;
   border: none;
   cursor: pointer;
-}
-
-a:visited {
-  color: rgb(245, 245, 245);
 }
 
 /* section common */
@@ -127,13 +129,24 @@ a:visited {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: teal;
+  background-color: var(--color-light-white);
+}
+#about .sub__contents {
+  width: 100%;
+  padding: 1.5rem;
+  text-align: start;
+  font-size: var(--font-regular);
 }
 
 /* contact me */
 
 #connect {
   background-color: var(--color-light-grey);
+}
+.connect__icon {
+  width: 100%;
+  font-size: var(--font-lrg);
+  align-items: center;
 }
 
 /* ✳✳❇❇❇❇❇❇❇❇❇✳✳✳✳✳✳ */
@@ -253,16 +266,18 @@ a:visited {
   .arrowTop {
     width: 3em;
     height: 3em;
-    bottom: 4em;
+    bottom: 3em;
+    right: 1.5em;
     flex-direction: flex;
     justify-content: center;
     align-items: center;
   }
-
   .arrowTop i {
-    font-size: var(-);
+    font-size: var(--font-medium);
+    align-self: center;
   }
-  .skills{
+
+  .skills {
     padding: 0 10px;
   }
 }
@@ -289,6 +304,13 @@ a:visited {
 
   #projects {
     height: 100vh;
+  }
+  #about .sub__contents {
+    font-size: var(--font-medium);
+  }
+  .connect__icon {
+    width: 100%;
+    align-items: center;
   }
 }
 

@@ -27,10 +27,10 @@
    
     <ul class="navbar__menu">
         <li class="navbar__menu__Item" data-link="#home" active>Home</li>
-        <li class="navbar__menu__Item" data-link="#skills">skills</li>
-        <li class="navbar__menu__Item" data-link="#projects">project</li>
-        <li class="navbar__menu__Item" data-link="#about" >about</li>
-        <li class="navbar__menu__Item" data-link="#connect">connect</li>  
+        <li class="navbar__menu__Item" data-link="#skills">Skills</li>
+        <li class="navbar__menu__Item" data-link="#projects">Projects</li>
+        <li class="navbar__menu__Item" data-link="#about" >About</li>
+        <li class="navbar__menu__Item" data-link="#connect">Connect</li>  
     </ul>
       
     <!-- Toggle bar -->
@@ -45,7 +45,6 @@
     </div>
 </nav> 
 <label for="menu__icon" class="background"></label>
-
 <!-- home -->
 <section id="home">
  
@@ -66,10 +65,10 @@
         and HTML doesen't read array but we will use in Js through JSON -->
     </div>
         <div class="home__icons">
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-facebook-square"></i>
-            <i class="far fa-envelope"></i>
-            <i class="fab fa-twitter-square"></i>
+            <a target="_blank" href="https://www.linkedin.com/in/jinhee-kim-b336aa183/"><i class="fab fa-linkedin"></i></a>
+            <a target="_blank" href="https://github.com/JinnyK015"><i class="fab fa-github-square"></i></a>
+            <a target="_blank" href="mailto:vedaforest@gmail.com"><i class="far fa-envelope"></i></a>
+            <a target="_blank" href="https://twitter.com/jinnyk015"><i class="fab fa-twitter-square"></i></a>
         </div>
 </div>
 </section>
@@ -79,9 +78,10 @@
         <div class="section__container">
             <h1 class="sub__title">Skills</h1>
             <p class="sub__contents">
-            Passion for learning new technologies.
-            Capable of working within a team environment and independently,
-            work under strict time pressure and adapt quickly when needed.
+            Passion for learning new technologies.<br/>
+            I am adept at working in team environments and independently.<br/>
+            I have experience working under strict time pressure.<br/>
+            And can adapt quickly when needed.
             </p>
 
             <div class="skills">    
@@ -127,7 +127,7 @@
 <!-- projects -->
 <section id="projects" class="section">
     <div class="section__container">
-        <h1 class="sub__title">Project</h1>
+        <h1 class="sub__title">Projects</h1>
    
  <!-- ✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨need to fixed        -->
     <!-- <div class="project__categories">
@@ -237,52 +237,41 @@
     </div>
 </section>
 
-
 <!-- about -->
 <section id="about" class="section">
-    <h1 class="sub__title">About me</h1>
-    <p class="sub__contents">
-        독학러, 새로운것 배우는거 좋아함.<br>
-        효율적이고 깔끔한 코딩을 하고싶어함 <br>
-        미술전공, 디자인과 애니메이션에 관심많음.<br>
-
-        I try to learn daily, I like to learn new technologies.<br>
-        I didn't study some thing I did't know<br/>
-        I think how to make effectively work<br/>
-        I want to be degine friendly web-developer,<br/>
-        I'm enjoying making pretty animaition screen.<br/>
-        I want to join comunicationable team.
-        <!-- 수치화 할수 있는 것으로 쓸것? 숫자나 몇개월 등으로 표현 가능할 것. -->
-    </p>
-
+    <div class="section__container">
+        <h1 class="sub__title">About me</h1>
+        <h3 class="sub__contents">
+            I have always pushed myself to learn new skills. I love being productive. <br/>
+            My goal is to code simple, efficient and intuitive websites and apps. <br/>
+            I’m interested in making eye-catching animations. <br/>
+            I'm from Korea, but I am based in Auckland, New Zealand. <br/>
+            I have a background in fine arts and supply chain management. <br/>
+            I enjoy running, board games and rock climbing. <br/>
+        </h3>
+    </div>
 </section>
 
 <!-- coneection -->
-
 <section id="connect" class="section">
     <div class="section__container">
         <h1 class="sub__title">contact me!</h1>
         <h3 class="sub__subtitle">vedaforest@gmail.com</h3>
-    </div>
-    <div class="connect__link">
-        <a href="http://gitnub.com/jinny015" target="_blank">
-            <i class="fab fa-github" aria-hidden="true"></i>
-        </a>
     
-    <a href="https://www.linkedin.com/in/jinhee-kim-b336aa183/" target="_blank">
-        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-    </a>
-    </div>
+        <div class="home__icons connect__icon">
+            <a target="_blank" href="https://www.linkedin.com/in/jinhee-kim-b336aa183/"><i class="fab fa-linkedin"></i></a>
+            <a target="_blank" href="https://github.com/JinnyK015"><i class="fab fa-github-square"></i></a>
+            <a target="_blank" href="mailto:vedaforest@gmail.com"><i class="far fa-envelope"></i></a>
+            <a target="_blank" href="https://twitter.com/jinnyk015"><i class="fab fa-twitter-square"></i></a>
+        </div>
 
-    <p class="contact__right">
-        2021 JinnyK - All rights reserved
-      </p>
-</div>
+        <p class="contact__right">
+            2021 JinnyK - All rights reserved
+        </p>
+    </div>
 </section>
 
-
 <!--arrow up to top-->
-
 <button class="arrowTop" data-link="#home">
     <i class="fas fa-chevron-up"></i>
 </button>
