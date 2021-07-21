@@ -20,23 +20,31 @@ document.addEventListener('scroll', () => {
 function scrollTo (selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior: "smooth"});
-}
-
-
+};
 
 // scrolling move trnasparent
 const home = document.querySelector('#home');
 const homeHeight = home.scrollHeight;
 const screenWidth = window.innerWidth;
 
-
-
 document.addEventListener('scroll', () => {
     if(screenWidth > 425){
-        home.style.opacity = 1 - window.scrollY / homeHeight;
+        home.style.opacity = 1.2 - window.scrollY / homeHeight;
     }
-}
-)
+});
+
+
+//navbar active effect (더 세분화된 선택자 참고. map 메쏘드 공부 참고)
+const sectionID =[
+    '#home',
+    '#skills',
+    '#projects',
+    '#about',
+    '#connect'
+];
+
+const sections = sectionID.map(id =>document.querySelector(id));
+const navItems = sectionID.map(id =>document.querySelector(`[data-link="${id}"]`));
 
 
 
@@ -99,6 +107,7 @@ const typeWriter = function(txtEl, words, wait=2500) {
 }
 
 //type method
+
 typeWriter.prototype.type = function(){
     // Current index of word = showing word from array
     const currentWord = this.wordIndex % this.words.length;   // wordindex is 0 so if using % ans length

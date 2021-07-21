@@ -227,6 +227,10 @@ button {
     font-size: var(--font-Xlrg);
   }
 
+  #skills {
+    height: auto;
+  }
+  
   .skills {
     background-color: transparent;
   }
@@ -239,22 +243,34 @@ button {
     bottom: 1em;
     right: 1em;
   }
+
 }
 
 /* Below 425px screen width */
-@media screen and (max-width: 425px) {
-  #skills {
-    height: auto;
-  }
+@media screen and (max-width: 425px) and (max-height: 620px){
 
   #home {
     padding-top: 0;
+    height: 120vh;
+  }
+  .home__column {
+    height: 100%;
   }
   .home__block {
     height: 40%;
     align-items: flex-end;
     position: relative;
+    margin-top: 65px;
   }
+  .home__text h1 {
+    font-size: var(--font-medium);
+  }
+
+  .home__icons {
+    margin-top: 1rem;
+    font-size: var(--font-medium);
+  }
+
   .home__avatar {
     width: 16rem;
   }
@@ -262,6 +278,8 @@ button {
     width: 80%;
     height: 40%;
   }
+
+
   /* 이거해서도 안되면 그냥 비주얼 없애버리기 ㅇㅇ... */
   .arrowTop {
     width: 3em;
@@ -314,27 +332,4 @@ button {
   }
 }
 
-/* Below 620px screen height */
 
-@media screen and (max-height: 620px) {
-  #home {
-    height: 120vh;
-  }
-
-  .home__column {
-    height: 100%;
-  }
-
-  .home__block {
-    margin-top: 65px;
-  }
-
-  .home__text h1 {
-    font-size: var(--font-medium);
-  }
-
-  .home__icons {
-    margin-top: 1rem;
-    font-size: var(--font-medium);
-  }
-}
