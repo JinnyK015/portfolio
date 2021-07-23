@@ -46,6 +46,32 @@ const sectionID =[
 const sections = sectionID.map(id =>document.querySelector(id));
 const navItems = sectionID.map(id =>document.querySelector(`[data-link="${id}"]`));
 
+let selectedNavItem = navItems[0];
+const observerOption={
+    root: null,
+    rootmargin: 0,
+    threshold:0.2
+}
+function obvcallback(entries, observer){
+    entries.forEach(entry => {
+        if(!entry.isinter){
+            const index = sectionID.indexOf(`#${entry.target.id}`)
+            let selectedIndex; 
+            if(entry.boundingClientRect.y < 0){
+                selectedIndex = index +1;
+            } else {
+                selectedIndex = index -1;
+            }
+            selectedNavItem.classList.remove('active');
+            selectedNavItem = navItems[selectedIndex];
+            selectedNavItem.classList.add('active');
+        }
+    
+    }
+    );
+}
+const observer = new IntersectionObserver( obvcallback, observerOption)
+sections.forEach(section => observer.observe(section))
 
 
 // navber scrolling color change

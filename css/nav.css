@@ -31,25 +31,13 @@
   padding: 4px 12px;
   font-weight: var(--weight-semi-bold);
 }
-/* 완성되면 다시 복귀시킬것
-.navbar__menu__Item.active{
+
+.navbar__menu__Item.active {
   border-bottom: 0.15rem solid var(--color-light-grey);
-  animation: lineSilde .3s ease-in-out;
 }
-@keyframes lineSilde {
-  0%{
-    transform: scaleX(0);
-  }
-  100%{
-    transform:scaleX(1);
-  }
-  
-}
- */
 
 .navbar__menu__Item:hover {
   background-color: var(--color-dark-white);
-
   cursor: pointer;
   border-radius: 6px;
 }
