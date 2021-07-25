@@ -1,0 +1,115 @@
+/* contact me */
+
+#connect {
+  background-color: var(--color-dark-white);
+}
+#connect >.section__container > .sub__subtitle{
+  color: var(--color-dark-grey);
+}
+.connect__icon {
+  width: 100%;
+  font-size: var(--font-lrg);
+  align-items: center;
+}
+/* direct Form */
+.direct__mail {
+  margin: 2rem;
+}
+.direct__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+.direct__form #messageInput,
+.direct__form input {
+  border: 2px solid var(--color-light-white);
+  font-size: var(--font-regular);
+  padding: 10px 20px;
+  width: 100%;
+  background-color: transparent;
+  transition: all 0.3s ease-in;
+  color: var(--color-dark-grey);
+}
+
+.direct__form #messageInput:focus,
+.direct__form input:focus {
+  background-color: var(--color-med-white);
+  outline: none;
+}
+#messageInput::placeholder,
+.direct__form input::placeholder {
+  color: white;
+}
+.direct__form button,
+.direct__form #subjectInput,
+.direct__form #messageInput {
+  grid-column: 1 / span 2;
+}
+
+#messageInput {
+  overflow: auto;
+  resize: vertical;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* button */
+.direct__mail button {
+  padding: 10px 30px;
+  margin-top: 1.5rem;
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  color: var(--color-light-grey);
+  background-color: var(--color-med-white);
+  border-radius: 10px;
+  box-shadow: 0 2px var(--color-dark-grey);
+}
+
+.direct__mail button:hover {
+  color: var(--color-orange);
+  background-color: var(--color-light-white);
+  box-shadow: 0 2px var(--color-dark-grey);
+  transition: all 0.3s ease-in;
+}
+
+.direct__mail button:active {
+  color: var(--color-white);
+  background-color: var(--color-med-white);
+  box-shadow: 0 -2px var(--color-dark-grey);
+}
+
+#direct__mail-status{
+  margin :1rem;
+  padding: 1rem;
+  font-weight: var(--weight-semi-bold);
+  color:var(--color-med-grey);
+  transition: all .3s ease-in-out;
+  border-radius: 10px;
+}
+
+#direct__mail-status.success{
+  background-color: rgba(207, 207, 207, 0.7);
+  animation: fade 4s ease-in forwards;
+}
+
+#direct__mail-status.error{
+  background-color: rgba(119, 119, 119, 0.3);
+  color: white;
+  animation: fade 2s ease-out forwards;
+}
+
+@keyframes fade {
+  0%{
+    opacity: 1;
+    pointer-events:all;
+  }
+  70%{
+    opacity: 1;
+    pointer-events:all;
+  }
+  100%{
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+}

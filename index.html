@@ -24,15 +24,15 @@
     <div class="navbar__log">
         <span>JinnyK</span>
     </div>
-   
+
     <ul class="navbar__menu">
         <li class="navbar__menu__Item active" data-link="#home">Home</li>
         <li class="navbar__menu__Item" data-link="#skills">Skills</li>
         <li class="navbar__menu__Item" data-link="#projects">Projects</li>
         <li class="navbar__menu__Item" data-link="#about" >About</li>
-        <li class="navbar__menu__Item" data-link="#connect">Connect</li>  
+        <li class="navbar__menu__Item" data-link="#connect">Connect</li>
     </ul>
-      
+
     <!-- Toggle bar -->
     <div class="nav__toggle-btn">
         <label for="menu__icon" class="menu__icon__bar">
@@ -43,23 +43,23 @@
         </label>
 
     </div>
-</nav> 
+</nav>
 <label for="menu__icon" class="background"></label>
 <!-- home -->
 <section id="home">
- 
+
     <div class="home__block home__column">
             <img src ="img/pic_line.png" class ="home__avatar">
         </div>
         <div class="home__text-container home__column">
-   
+
            <div class="home__text">
             <h1>Hello!</h1>
                <h1> I'm <span class="home__title"
                         data-wait="2500"
                         data-words='["JinnyK.", "a Front-end Developer.","a Designer.","a Creator."]'>JinnyK</span>
                         <span></span>
-                </h1>   
+                </h1>
     <!-- data-wait is stopped curser time. -->
     <!-- date-words need to ''single dot for array inside"" comments.
         and HTML doesen't read array but we will use in Js through JSON -->
@@ -84,7 +84,7 @@
             And can adapt quickly when needed.
             </p>
 
-            <div class="skills">    
+            <div class="skills">
                 <ul class="skills__list">
                     <li class="skill__icon">
                         <div class="skill__icon--box"><i class="fab fa-html5"></i></div>
@@ -128,19 +128,19 @@
 <section id="projects" class="section">
     <div class="section__container">
         <h1 class="sub__title">Projects</h1>
-   
+
  <!-- ✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨need to fixed        -->
     <!-- <div class="project__categories">
         <button class="category__btn">ALL<span class="category__count">3</span></button>
         <button class="category__btn">Vanila JS<span class="category__count">1</span></button>
         <button class="category__btn">React<span class="category__count">2</span></button>
     </div> -->
-        
+
         <div class="work__project">
 
             <div class="work__projects">
                 <a href="https://jinnyk015.github.io/pawpawtalk_practice/" class="project" target="_blank">
-                    <div class="work__cover"> 
+                    <div class="work__cover">
                     <!-- 프로젝트는 일러스트나 포토샵으로 깔끔하게 심볼로 만들고 호버했을때 프로그램보이게 한다-->
                     <img src="img/project/pawpawtalk.png" alt="projecttpye" class="project__img">
                     <div class="project__description">
@@ -158,7 +158,7 @@
 
             <div class="work__projects">
                 <a href="https://jinnyk015.github.io/momentom-clone/" class="project" target="_blank">
-                    <div class="work__cover"> 
+                    <div class="work__cover">
                     <!-- 프로젝트는 일러스트나 포토샵으로 깔끔하게 심볼로 만들고 호버했을때 프로그램보이게 한다-->
                     <img src="img/project/momento.PNG" alt="projecttpye" class="project__img">
                     <div class="project__description">
@@ -177,7 +177,7 @@
 
             <div class="work__projects">
                 <a href="https://jinnyk015.github.io/js-paint/" class="project" target="_blank">
-                    <div class="work__cover"> 
+                    <div class="work__cover">
                     <!-- 프로젝트는 일러스트나 포토샵으로 깔끔하게 심볼로 만들고 호버했을때 프로그램보이게 한다-->
                     <img src="img/project/paint.PNG" alt="projecttpye" class="project__img">
                     <div class="project__description">
@@ -196,7 +196,7 @@
 
             <div class="work__projects">
                 <a href="#projects" class="project" target="_blank">
-                    <div class="work__cover"> 
+                    <div class="work__cover">
                         <!-- 프로젝트는 일러스트나 포토샵으로 깔끔하게 심볼로 만들고 호버했을때 프로그램보이게 한다-->
                         <div class="project__img_temp">sample img needed</div>
                         <div class="project__description">
@@ -215,7 +215,7 @@
 
             <div class="work__projects">
                 <a href="#projects" class="project" target="_blank">
-                    <div class="work__cover"> 
+                    <div class="work__cover">
                         <!-- 프로젝트는 일러스트나 포토샵으로 깔끔하게 심볼로 만들고 호버했을때 프로그램보이게 한다-->
                         <div class="project__img_temp">sample img needed</div>
                         <div class="project__description">
@@ -255,9 +255,18 @@
 <!-- coneection -->
 <section id="connect" class="section">
     <div class="section__container">
-        <h1 class="sub__title">contact me!</h1>
-        <h3 class="sub__subtitle">vedaforest@gmail.com</h3>
-    
+        <h1 class="sub__title">Contect</h1>
+        <h3 class="sub__subtitle">Get in touch</h3>
+            <div class="direct__mail">
+                <form id ="contectForm" class="direct__form" action="https://formspree.io/f/mgerljbw" method="POST">
+                    <input type="text" id="nameInput" name ="name" placeholder="Your Name*" required>
+                    <input type="email" id="emailInput" name="email" placeholder="Your Email*" required>
+                    <input type="text" id="subjectInput" name="subject" placeholder="Subject*" required>
+                    <textarea name="message" id="messageInput" rows="3" placeholder="Your Message*" required></textarea>
+                    <button type="submit">SEND</button>
+                </form>
+                    <div id="direct__mail-status"></div>
+            </div>
         <div class="home__icons connect__icon">
             <a target="_blank" href="https://www.linkedin.com/in/jinhee-kim-b336aa183/"><i class="fab fa-linkedin"></i></a>
             <a target="_blank" href="https://github.com/JinnyK015"><i class="fab fa-github-square"></i></a>

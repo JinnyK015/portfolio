@@ -1,5 +1,31 @@
 'use strict'
 
+// formspree.io API Scripts
+
+const directForm = document.getElementById("contectForm");
+    
+async function handleSubmit(event) {
+  event.preventDefault();
+  let status = document.getElementById("direct__mail-status");
+  const data = new FormData(event.target);
+  fetch(event.target.action, {
+    method: directForm.method,
+    body: data,
+    headers: {
+        'Accept': 'application/json'
+    }
+  }).then(response => {
+    status.classList.add('success');
+    status.innerHTML = "Successfully sent!";
+
+    directForm.reset()
+  }).catch(error => {
+    status.classList.add('error');
+    status.innerHTML = "Oops! There was a problem submitting your form"
+  });
+}
+directForm.addEventListener("submit", handleSubmit);
+
 
 // toggle scrolling move
 const arrowTop = document.querySelector('.arrowTop');
