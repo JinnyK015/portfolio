@@ -30,8 +30,8 @@
 
   /* Font weight */
   --weight-bold: 700;
-  --weight-semi-bold: 600;
-  --weight-regular: 400;
+  --weight-semi-bold: 500;
+  --weight-regular: 300;
 
   /* Annimation */
   --anim-duration: 300ms;
@@ -60,7 +60,7 @@ h3 {
 
 body {
   margin: 0;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -235,8 +235,8 @@ button {
   }
 
   .arrowTop {
-    bottom: 1em;
-    right: 1em;
+    bottom: 1.5em;
+    right: 1.5em;
   }
   
 }
@@ -254,14 +254,14 @@ button {
     height: 40%;
     align-items: flex-end;
     position: relative;
-    margin-top: 65px;
+    margin-top: 2em;
   }
   .home__text h1 {
     font-size: var(--font-medium);
   }
 
   .home__icons {
-    font-size: var(--font-semi-lrg);
+    font-size: var(--font-lrg);
   }
 
   .home__avatar {
@@ -274,8 +274,6 @@ button {
   .arrowTop {
     width: 3em;
     height: 3em;
-    bottom: 1em;
-    right: 1em;
     flex-direction: flex;
     justify-content: center;
     align-items: center;

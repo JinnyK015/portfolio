@@ -3,7 +3,7 @@
 // formspree.io API Scripts
 
 const directForm = document.getElementById("contectForm");
-    
+
 async function handleSubmit(event) {
   event.preventDefault();
   let status = document.getElementById("direct__mail-status");
@@ -68,37 +68,43 @@ const sectionID =[
     '#about',
     '#connect'
 ];
-
 const sections = sectionID.map(id =>document.querySelector(id));
 const navItems = sectionID.map(id =>document.querySelector(`[data-link="${id}"]`));
 
+let selectedNavIndex = 0;
 let selectedNavItem = navItems[0];
-const observerOption={
+
+function selectedIndex(selected){
+    selectedNavItem.classList.remove('active');
+    selectedNavItem = selected;
+    selectedNavItem.classList.add('active');
+}
+const observerOption = {
     root: null,
     rootmargin: 0,
-    threshold:0.2
-}
+    threshold:0.2,
+};
+
 function obvcallback(entries, observer){
     entries.forEach(entry => {
-        if(!entry.isinter){
+        if(!entry.isIntersecting && entry.intersectionRatio > 0){
             const index = sectionID.indexOf(`#${entry.target.id}`)
-            let selectedIndex; 
             if(entry.boundingClientRect.y < 0){
-                selectedIndex = index +1;
+                selectedNavIndex = index +1;
             } else {
-                selectedIndex = index -1;
+                selectedNavIndex = index -1;
             }
-            selectedNavItem.classList.remove('active');
-            selectedNavItem = navItems[selectedIndex];
-            selectedNavItem.classList.add('active');
         }
-    
     }
     );
-}
-const observer = new IntersectionObserver( obvcallback, observerOption)
-sections.forEach(section => observer.observe(section))
+};
 
+const observer = new IntersectionObserver( obvcallback, observerOption);
+sections.forEach(section => observer.observe(section));
+
+window.addEventListener('scroll', ()=>{
+    selectedIndex(navItems[selectedNavIndex]);
+});
 
 // navber scrolling color change
 
@@ -114,7 +120,7 @@ document.addEventListener('scroll', () =>{
 )
 
 
-// navber menu click scrolling 
+// navber menu click scrolling
 const checkBox = document.querySelector('#menu__icon');
 const nav_menu = document.querySelector('.navbar__menu');
 nav_menu.addEventListener('click', (event) => {
@@ -135,7 +141,7 @@ const menuicon = document.querySelector("#menu__icon");
 menuicon.addEventListener('click', (e)=>{
     if(menuicon.checked === true){
         nav_menu.classList.add('open');
-    } else { 
+    } else {
         nav_menu.classList.remove('open');
     }
 })
@@ -155,7 +161,7 @@ const typeWriter = function(txtEl, words, wait=2500) {
     this.type();
     //main arithmetic core.
     this.isDelet = false;  //After typing anim we need to delet anim. it for that.
-    
+
 }
 
 //type method
@@ -184,14 +190,14 @@ typeWriter.prototype.type = function(){
     if(this.isDelet){
         typeSpeed /= 2;
     }
-    
+
 
 
     //if word is finished work.
     if(!this.isDelet && this.txt === fulltxt){
         // making pause at end part
         typeSpeed = this.wait;
-        // Set delete to true 
+        // Set delete to true
         this.isDelet = true;
 
     } else if(this.isDelet && this.txt === '') {
@@ -200,7 +206,7 @@ typeWriter.prototype.type = function(){
         this.wordIndex++;
         //pause before start typing
         typeSpeed = 500;
-    
+
     }
 
     setTimeout(() => this.type(), typeSpeed)    //second parameter is millesecond = typing speed, main goal is each time we show up text
