@@ -245,7 +245,7 @@ button {
 @media screen and (max-width: 425px) , (max-height: 620px) {
   #home {
     padding-top: 0;
-    height: 120vh;
+    height: 110vh;
   }
   .home__column {
     height: 100%;
@@ -254,7 +254,6 @@ button {
     height: 40%;
     align-items: flex-end;
     position: relative;
-    margin-top: 2em;
   }
   .home__text h1 {
     font-size: var(--font-medium);
@@ -271,6 +270,14 @@ button {
     width: 80%;
     height: 40%;
   }
+  #skills{
+    height: 100%;
+  }
+  .skills {
+    padding: 0 10px;
+    margin-bottom: 2rem;
+  }
+
   .arrowTop {
     width: 3em;
     height: 3em;
@@ -281,10 +288,6 @@ button {
   .arrowTop i {
     font-size: var(--font-medium);
     align-self: center;
-  }
-
-  .skills {
-    padding: 0 10px;
   }
 
   #contectForm {
