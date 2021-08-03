@@ -223,7 +223,7 @@ button {
   }
 
   #skills {
-    height: auto;
+    height: 100vh;
   }
 
   .skills {
@@ -266,7 +266,7 @@ button {
     height: 40%;
   }
   #skills {
-    height: 100%;
+    height: auto;
   }
   .skills {
     padding: 0 10px;
