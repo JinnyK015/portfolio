@@ -40,7 +40,7 @@
 .home__icons {
   font-size: var(--font-semi-lrg);
   padding: 10px 0;
-  width: 35%;
+  width: 40%;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;

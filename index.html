@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hi! I'm JinnyK</title>
+    <title>JinnyK</title>
     <meta name="description" content="Portfolio for web-developer JinnyK">
     <meta name="author" content="JinnyK">
     <link rel="icon" href="img/favicon.png" type="image/png">
@@ -40,7 +40,7 @@
             <span></span>
             <span></span>
         </label>
-        </label>
+        
 
     </div>
 </nav>
@@ -49,7 +49,7 @@
 <section id="home">
 
     <div class="home__block home__column">
-            <img src ="img/pic_line.png" class ="home__avatar">
+            <img src="img/pic_line.png" class ="home__avatar">
         </div>
         <div class="home__text-container home__column">
 
@@ -104,11 +104,11 @@
                         </div>
                         <span>react</span></li>
                     <li class="skill__icon">
-                        <div class="skill__icon--box "> <div class="comingsoon"><div class="loading"></div><img  height="40" width="40" src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/typescript.svg"/> </div>
+                        <div class="skill__icon--box "> <div class="comingsoon"><div class="loading"></div><img height="40" width="40" src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/typescript.svg"/> </div>
                         </div>
                         <span>typescript</span></li>
                     <li class="skill__icon">
-                        <div class="skill__icon--box "> <div class="comingsoon"><div class="loading"></div><img  height="42" width="42" src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/babel.svg"/>  </div>
+                        <div class="skill__icon--box "> <div class="comingsoon"><div class="loading"></div><img height="42" width="42" src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/babel.svg"/>  </div>
                         </div>
                         <span>babel</span></li>
                     <li class="skill__icon">
@@ -116,7 +116,7 @@
                         </div>
                         <span>SCSS</span></li>
                     <li class="skill__icon">
-                        <div class="skill__icon--box "> <div class="comingsoon"><div class="loading"></div><img  height="48" width="48" src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/pug.svg"/> </div>
+                        <div class="skill__icon--box "> <div class="comingsoon"><div class="loading"></div><img height="48" width="48" src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/pug.svg"/> </div>
                         </div>
                         <span>pug</span></li>
                 </ul>
@@ -126,59 +126,71 @@
 
 <!-- projects -->
 <section id="projects" class="section">
-    <div class="section__container">
+   
         <h1 class="sub__title">Projects</h1>
+        <div class="section__container">
 
- <!-- ✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨need to fixed        -->
-    <!-- <div class="project__categories">
-        <button class="category__btn">ALL<span class="category__count">3</span></button>
-        <button class="category__btn">Vanila JS<span class="category__count">1</span></button>
-        <button class="category__btn">React<span class="category__count">2</span></button>
-    </div> -->
+        <button class="slide__arrow silde__left"><i class="fas fa-chevron-left fa-2x silde__left "></i></button>
+        <div class="project__main">
 
-        <div class="work__project">
+            <ul class="silder__container" id ="silder">
 
-            <div class="work__projects">
-                <a href="https://jinnyk015.github.io/pawpawtalk_practice/" class="project" target="_blank">
-                    <div class="work__cover">
-                    <!-- 프로젝트는 일러스트나 포토샵으로 깔끔하게 심볼로 만들고 호버했을때 프로그램보이게 한다-->
-                    <img src="img/project/pawpawtalk.png" alt="projecttpye" class="project__img">
-                    <div class="project__description">
-                        <i class="fas fa-paw fa-3x"></i>
-                        <h3>Messaging App</h3>
-                        <span>clone coding</span>
-                        <div class="project__simbol">
-                            <i class="fab fa-html5 fa-2x"></i>
-                            <i class="fab fa-css3-alt fa-2x"></i>
+                <li class="project__item showingProject" id ="slide_project02">
+                    <div class="project__container">
+                        <video autoplay loop muted class="video__block">
+                            <source src="/img/project/labtop_crome.mp4" type="video/mp4"> </video>
+                        <div class="project__detail">
+                            <div class="detail__column">
+                                <p class="project__tool">HTML / CSS / Vanila JS / API </p>
+                                <h3 class="project__name">Chrome Momentum WebSite</h3>
+                                <p class="project__summry">Using HTML, CSS and vanila JS "crome" clone coding.</p>
+                            </div>
+                            <div class="detail__column">
+                                <a href="https://jinnyk015.github.io/momentom-clone/"  target="_blank"><button>Live</button></a> 
+                                <a href="https://github.com/JinnyK015/momentom-clone" target="_black"><button>Code</button></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                </a>
-            </div>
+                </li>
 
-            <div class="work__projects">
-                <a href="https://jinnyk015.github.io/momentom-clone/" class="project" target="_blank">
-                    <div class="work__cover">
-                    <!-- 프로젝트는 일러스트나 포토샵으로 깔끔하게 심볼로 만들고 호버했을때 프로그램보이게 한다-->
-                    <img src="img/project/momento.PNG" alt="projecttpye" class="project__img">
-                    <div class="project__description">
-                        <i class="fas fa-clipboard-list fa-3x"></i>
-                        <h3>Momentum website</h3>
-                        <span>learn how to use JS</span>
-                        <div class="project__simbol">
-                            <i class="fab fa-html5 fa-2x"></i>
-                            <i class="fab fa-css3-alt fa-2x"></i>
-                            <i class="fab fa-js-square fa-2x"></i>
+                <li class="project__item" id ="slide_project01">
+                    <div class="project__container">
+                        <video autoplay loop muted class="video__block"><source src="/img/project/mobile_pawpawtalk.mp4" type="video/mp4"> </video>
+                        <!-- explain about project -->
+                        <div class="project__detail">
+                            <div class="detail__column">
+                                <p class="project__tool">HTML / CSS</p>
+                                <h3 class="project__name">Messenger App</h3>
+                                <p class="project__summry">I built a messenger app based on "KaKao talk". I learn through this project about HTML, CSS animation, transition, tranfrom and media qurey.</p>
+                            </div>
+                            <!-- link to live & github -->
+                            <div class="detail__column">
+                                <a href="https://jinnyk015.github.io/pawpawtalk_practice/"  target="_blank"><button>Live</button></a> 
+                                <a href="https://github.com/JinnyK015/pawpawtalk_practice" target="_black"><button>Code</button></a>
+                            </div>
                         </div>
                     </div>
-                    </div>
-                </a>
-            </div>
+                </li>
+
+
+            </ul>
+        </div>
+        <button class="slide__arrow silde__right"><i class="fas fa-chevron-right fa-2x silde__right"></i></button>
+
+  
+
+    </div>
+    <div class="slide__navBtn">
+        <button class="slide__btn" id="project__02"></button>
+        <button class="slide__btn" id="project__01"></button>
+    </div>
+
+ 
+   <!--      <div class="work__project">
 
             <div class="work__projects">
                 <a href="https://jinnyk015.github.io/js-paint/" class="project" target="_blank">
                     <div class="work__cover">
-                    <!-- 프로젝트는 일러스트나 포토샵으로 깔끔하게 심볼로 만들고 호버했을때 프로그램보이게 한다-->
                     <img src="img/project/paint.PNG" alt="projecttpye" class="project__img">
                     <div class="project__description">
                         <i class="fas fa-palette fa-3x"></i>
@@ -197,7 +209,6 @@
             <div class="work__projects">
                 <a href="#projects" class="project" target="_blank">
                     <div class="work__cover">
-                        <!-- 프로젝트는 일러스트나 포토샵으로 깔끔하게 심볼로 만들고 호버했을때 프로그램보이게 한다-->
                         <div class="project__img_temp">sample img needed</div>
                         <div class="project__description">
                             <i class="fas fa-gamepad fa-3x"></i>
@@ -216,7 +227,6 @@
             <div class="work__projects">
                 <a href="#projects" class="project" target="_blank">
                     <div class="work__cover">
-                        <!-- 프로젝트는 일러스트나 포토샵으로 깔끔하게 심볼로 만들고 호버했을때 프로그램보이게 한다-->
                         <div class="project__img_temp">sample img needed</div>
                         <div class="project__description">
                             <i class="fab fa-youtube fa-3x"></i>
@@ -233,8 +243,8 @@
                     </div>
                 </a>
             </div>
-        </div>
-    </div>
+        </div>-->
+ 
 </section>
 
 <!-- about -->
@@ -255,7 +265,7 @@
 <!-- coneection -->
 <section id="connect" class="section">
     <div class="section__container">
-        <h1 class="sub__title">Contect</h1>
+        <h1 class="sub__title">Connect</h1>
         <h3 class="sub__subtitle">Get in touch</h3>
             <div class="direct__mail">
                 <form id ="contectForm" class="direct__form" action="https://formspree.io/f/mgerljbw" method="POST">

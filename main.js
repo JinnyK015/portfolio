@@ -1,4 +1,71 @@
 'use strict'
+//project silder
+const rightArrow = document.querySelector(".silde__right");
+const leftArrow = document.querySelector(".silde__left");
+const projectScreen = document.querySelector(".silder__container");
+const projectItems = Array.from(document.querySelectorAll(".project__item"));
+const slideBtns = Array.from(document.querySelectorAll(".slide__btn"));
+const projectWidth = projectScreen.clientWidth / projectItems.length;
+
+function pjcallback(entries, pjObserver) {
+    entries.forEach(entry => {
+        
+        if(entry.isIntersecting && entry.intersectionRatio > 0){
+            const findProjectIndex = (element) => {if(element.id == `${entry.target.id}`) return true; };
+            const pjindex = projectItems.findIndex(findProjectIndex);
+
+            let selectedBtn = slideBtns[pjindex];
+
+            function activeSlideBtn() {
+                slideBtns.forEach(entry =>{
+                    if(selectedBtn.id == entry.id){
+                        selectedBtn.classList.add("active");
+                    } else{
+                        entry.classList.remove("active");
+                    }
+                })
+            };
+
+            switch (pjindex){
+                case 0: 
+                    leftArrow.classList.add("display_none");
+                    rightArrow.classList.remove("display_none");
+                    activeSlideBtn();
+                    
+                    break;
+                case 1 :
+                    
+                    leftArrow.classList.remove("display_none");
+                    rightArrow.classList.add("display_none");
+                    activeSlideBtn();
+                    break;
+                }
+            }
+        
+        }
+    )}
+
+rightArrow.addEventListener("click", () => {
+    projectScreen.style.transform = `translateX(-${projectWidth}px)`;
+    });
+
+leftArrow.addEventListener("click", () => {
+    projectScreen.style.transform = `translateX(0px)`;
+});
+
+
+let pjOptions = {
+    root: document.querySelector(".project__main"),
+    rootmargin: '0px',
+    threshold: 0.5
+}
+
+const pjObserver = new IntersectionObserver(pjcallback, pjOptions);
+
+projectItems.forEach(project__item => pjObserver.observe(project__item));
+
+
+
 
 // formspree.io API Scripts
 
@@ -66,7 +133,7 @@ const sectionID =[
     '#skills',
     '#projects',
     '#about',
-    '#connect'
+    '#connect' 
 ];
 const sections = sectionID.map(id =>document.querySelector(id));
 const navItems = sectionID.map(id =>document.querySelector(`[data-link="${id}"]`));

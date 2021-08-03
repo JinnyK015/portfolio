@@ -1,15 +1,18 @@
 /* contact me */
 
 #connect {
-  background-color: var(--color-dark-white);
+  background-color: var(--color-grey);
 }
 #connect >.section__container > .sub__subtitle{
-  color: var(--color-dark-grey);
+  color: var(--color-dark-white);
 }
 .connect__icon {
   width: 100%;
   font-size: var(--font-lrg);
   align-items: center;
+}
+.connect__icon i {
+  color:var(--color-dark-white);
 }
 /* direct Form */
 .direct__mail {
@@ -23,11 +26,11 @@
 
 .direct__form #messageInput,
 .direct__form input {
-  border: 2px solid var(--color-light-white);
+  border: 2px solid var(--color-dark-white);
   font-size: var(--font-regular);
   padding: 10px 20px;
   width: 100%;
-  background-color: transparent;
+  background-color: rgba(207, 207, 207, 0.6);
   transition: all 0.3s ease-in;
   color: var(--color-dark-grey);
 }
@@ -39,7 +42,7 @@
 }
 #messageInput::placeholder,
 .direct__form input::placeholder {
-  color: white;
+  color: var(--color-light-white);
 }
 .direct__form button,
 .direct__form #subjectInput,
