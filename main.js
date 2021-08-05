@@ -5,7 +5,8 @@ const leftArrow = document.querySelector(".silde__left");
 const projectScreen = document.querySelector(".silder__container");
 const projectItems = Array.from(document.querySelectorAll(".project__item"));
 const slideBtns = Array.from(document.querySelectorAll(".slide__btn"));
-const projectWidth = projectScreen.clientWidth / projectItems.length;
+const projectWidth = projectItems[0].clientWidth;
+
 
 function pjcallback(entries, pjObserver) {
     entries.forEach(entry => {
