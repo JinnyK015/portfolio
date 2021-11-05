@@ -6,7 +6,7 @@ const projectScreen = document.querySelector(".silder__container");
 const projectSize = document.querySelector(".project__container");
 const projectItems = Array.from(document.querySelectorAll(".project__item"));
 const slideBtns = Array.from(document.querySelectorAll(".slide__btn"));
-const projectWidth = projectSize.clientWidth ;
+
 
 
 
@@ -50,8 +50,9 @@ function pjcallback(entries, pjObserver) {
     )}
 
 rightArrow.addEventListener("click", () => {
-    projectScreen.style.transform = `translateX(-${projectWidth}px)`;
-    console.log(projectWidth);
+    const moveWidth =projectScreen.clientWidth/2;
+    projectScreen.style.transform = `translateX(-${moveWidth}px)`;
+    console.log(projectScreen.clientWidth, projectScreen.clientWidth/2, moveWidth);
     });
 
 leftArrow.addEventListener("click", () => {

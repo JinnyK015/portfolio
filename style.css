@@ -413,4 +413,7 @@ button {
     width: 100%;
     align-items: center;
   }
+  .project__container {
+    width: 100%;
+  }
 }
