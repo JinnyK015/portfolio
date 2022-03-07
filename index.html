@@ -1,191 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JinnyK</title>
-    <meta name="description" content="Portfolio for web-developer JinnyK">
-    <meta name="author" content="JinnyK">
-    <link rel="icon" href="img/favicon.png" type="image/png">
+    <meta name="description" content="Portfolio for web-developer JinnyK" />
+    <meta name="author" content="JinnyK" />
+    <link rel="icon" href="img/favicon.png" type="image/png" />
 
     <script src="https://kit.fontawesome.com/54b0b8045c.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet" />
     <script src="main.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-<!-- Navi bar -->
-<input type="checkbox" id ="menu__icon">
-<nav id="navbar">
-    <div class="navbar__log">
+  <body>
+    <!-- Navi bar -->
+    <input type="checkbox" id="menu__icon" />
+    <nav id="navbar">
+      <div class="navbar__log">
         <span>JinnyK</span>
-    </div>
+      </div>
 
-    <ul class="navbar__menu">
+      <ul class="navbar__menu">
         <li class="navbar__menu__Item active" data-link="#home">Home</li>
         <li class="navbar__menu__Item" data-link="#skills">Skills</li>
         <li class="navbar__menu__Item" data-link="#projects">Projects</li>
-        <li class="navbar__menu__Item" data-link="#about" >About</li>
+        <li class="navbar__menu__Item" data-link="#about">About</li>
         <li class="navbar__menu__Item" data-link="#connect">Connect</li>
-    </ul>
+      </ul>
 
-    <!-- Toggle bar -->
-    <div class="nav__toggle-btn">
+      <!-- Toggle bar -->
+      <div class="nav__toggle-btn">
         <label for="menu__icon" class="menu__icon__bar">
-            <span></span>
-            <span></span>
-            <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </label>
-        
+      </div>
+    </nav>
+    <label for="menu__icon" class="background"></label>
 
-    </div>
-</nav>
-<label for="menu__icon" class="background"></label>
-<!-- home -->
-<section id="home">
-
-    <div class="home__block home__column">
-            <img src="img/pic_line.png" class ="home__avatar">
-        </div>
-        <div class="home__text-container home__column">
-
-           <div class="home__text">
-            <h1>Hello!</h1>
-               <h1> I'm <span class="home__title"
-                        data-wait="2500"
-                        data-words='["JinnyK.", "a Front-end Developer.","a Designer.","a Creator."]'>JinnyK</span>
-                        <span></span>
-                </h1>
-    <!-- data-wait is stopped curser time. -->
-    <!-- date-words need to ''single dot for array inside"" comments.
+    <!-- home -->
+    <section id="home">
+      <div class="home__block home__column">
+        <img src="img/pic_line.png" class="home__avatar" />
+      </div>
+      <div class="home__text-container home__column">
+        <div class="home__text">
+          <h1>Hello!</h1>
+          <h1>
+            I'm
+            <span
+              class="home__title"
+              data-wait="2500"
+              data-words='["JinnyK.", "a Front-end Developer.","a Designer.","a Creator."]'
+              >JinnyK</span
+            >
+            <span></span>
+          </h1>
+          <!-- data-wait is stopped curser time. -->
+          <!-- date-words need to ''single dot for array inside"" comments.
         and HTML doesen't read array but we will use in Js through JSON -->
-    </div>
+        </div>
         <div class="home__icons">
-            <a target="_blank" href="https://www.linkedin.com/in/jinhee-kim-b336aa183/"><i class="fab fa-linkedin"></i></a>
-            <a target="_blank" href="https://github.com/JinnyK015"><i class="fab fa-github-square"></i></a>
-            <a target="_blank" href="mailto:vedaforest@gmail.com"><i class="far fa-envelope"></i></a>
-            <a target="_blank" href="https://twitter.com/jinnyk015"><i class="fab fa-twitter-square"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/jinhee-kim-b336aa183/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a target="_blank" href="https://github.com/JinnyK015"><i class="fab fa-github-square"></i></a>
+          <a target="_blank" href="mailto:jinnykim015@gmail.com"><i class="far fa-envelope"></i></a>
+          <a target="_blank" href="https://twitter.com/jinnyk015"><i class="fab fa-twitter-square"></i></a>
         </div>
-</div>
-</section>
+      </div>
+    </section>
 
-<!-- skills -->
-<section id="skills" class="section">
-        <div class="section__container">
-            <h1 class="sub__title">Skills</h1>
-            <p class="sub__contents">
-            Passion for learning new technologies.<br/>
-            I am adept at working in team environments and independently.<br/>
-            I have experience working under strict time pressure.<br/>
-            And can adapt quickly when needed.
-            </p>
+    <!-- skills -->
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1 class="sub__title">Skills</h1>
+        <p class="sub__contents">
+          Passion for learning new technologies.<br />
+          I am adept at working in team environments and independently.<br />
+          I have experience working under strict time pressure.<br />
+          And can adapt quickly when needed.
+        </p>
 
-            <div class="skills">
-                <ul class="skills__list">
-                    <li class="skill__icon">
-                        <div class="skill__icon--box"><i class="fab fa-html5"></i></div>
-                        <span>HTML</span></li>
-                    <li class="skill__icon">
-                        <div class="skill__icon--box"><i class="fab fa-css3-alt"></i></div>
-                        <span>CSS</span></li>
-                    <li class="skill__icon">
-                        <div class="skill__icon--box"><i class="fab fa-js-square"></i></div>
-                        <span>JavaScript</span></li>
-                    <li class="skill__icon">
-                        <div class="skill__icon--box "><div class="comingsoon"><div class="loading"></div><i class="fab fa-node-js"></i></div>
-                        </div>
-                        <span>NodeJS</span></li>
-                    <li class="skill__icon">
-                        <div class="skill__icon--box "><div class="comingsoon"> <div class="loading"></div><i class="fab fa-react"></i> </div>
-                        </div>
-                        <span>react</span></li>
-                    <li class="skill__icon">
-                        <div class="skill__icon--box "> <div class="comingsoon"><div class="loading"></div><img height="40" width="40" src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/typescript.svg"/> </div>
-                        </div>
-                        <span>typescript</span></li>
-                    <li class="skill__icon">
-                        <div class="skill__icon--box "> <div class="comingsoon"><div class="loading"></div><img height="42" width="42" src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/babel.svg"/>  </div>
-                        </div>
-                        <span>babel</span></li>
-                    <li class="skill__icon">
-                        <div class="skill__icon--box "> <div class="comingsoon"><div class="loading"></div><i class="fab fa-sass "></i> </div>
-                        </div>
-                        <span>SCSS</span></li>
-                    <li class="skill__icon">
-                        <div class="skill__icon--box "> <div class="comingsoon"><div class="loading"></div><img height="48" width="48" src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/pug.svg"/> </div>
-                        </div>
-                        <span>pug</span></li>
-                </ul>
-            </div>
+        <div class="skills">
+          <ul class="skills__list">
+            <li class="skill__icon">
+              <div class="skill__icon--box"><i class="fab fa-html5"></i></div>
+              <span>HTML</span>
+            </li>
+            <li class="skill__icon">
+              <div class="skill__icon--box"><i class="fab fa-css3-alt"></i></div>
+              <span>CSS</span>
+            </li>
+            <li class="skill__icon">
+              <div class="skill__icon--box"><i class="fab fa-js-square"></i></div>
+              <span>JavaScript</span>
+            </li>
+            <li class="skill__icon">
+              <div class="skill__icon--box">
+                <div class="comingsoon">
+                  <div class="loading"></div>
+                  <i class="fab fa-node-js"></i>
+                </div>
+              </div>
+              <span>NodeJS</span>
+            </li>
+            <li class="skill__icon">
+              <div class="skill__icon--box">
+                <div class="comingsoon">
+                  <div class="loading"></div>
+                  <i class="fab fa-react"></i>
+                </div>
+              </div>
+              <span>react</span>
+            </li>
+            <li class="skill__icon">
+              <div class="skill__icon--box">
+                <div class="comingsoon">
+                  <div class="loading"></div>
+                  <img height="40" width="40" src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/typescript.svg" />
+                </div>
+              </div>
+              <span>typescript</span>
+            </li>
+            <li class="skill__icon">
+              <div class="skill__icon--box">
+                <div class="comingsoon">
+                  <div class="loading"></div>
+                  <img height="42" width="42" src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/babel.svg" />
+                </div>
+              </div>
+              <span>babel</span>
+            </li>
+            <li class="skill__icon">
+              <div class="skill__icon--box">
+                <div class="comingsoon">
+                  <div class="loading"></div>
+                  <i class="fab fa-sass"></i>
+                </div>
+              </div>
+              <span>SCSS</span>
+            </li>
+            <li class="skill__icon">
+              <div class="skill__icon--box">
+                <div class="comingsoon">
+                  <div class="loading"></div>
+                  <img height="48" width="48" src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/pug.svg" />
+                </div>
+              </div>
+              <span>pug</span>
+            </li>
+          </ul>
         </div>
-</section>
+      </div>
+    </section>
 
-<!-- projects -->
-<section id="projects" class="section">
-   
-        <h1 class="sub__title">Projects</h1>
+    <!-- projects -->
+    <section id="projects" class="section">
+      <h1 class="sub__title">Projects</h1>
 
-        <div class="section__container">
-
-        <button class="slide__arrow silde__left"><i class="fas fa-chevron-left fa-2x silde__left "></i></button>
+      <div class="section__container">
+        <button class="slide__arrow silde__left"><i class="fas fa-chevron-left fa-2x silde__left"></i></button>
         <div class="project__main">
+          <ul class="silder__container" id="silder">
+            <li class="project__item" id="slide_project02">
+              <div class="project__container">
+                <video autoplay loop muted class="video__block">
+                  <source src="./img/project/labtop_crome.mp4" type="video/mp4" />
+                </video>
+                <div class="project__detail">
+                  <div class="detail__column">
+                    <p class="project__tool">HTML / CSS / Vanila JS / API</p>
+                    <h3 class="project__name">Chrome Momentum WebSite</h3>
+                    <p class="project__summry">Using HTML, CSS and vanila JS "crome" clone coding.</p>
+                  </div>
+                  <div class="detail__column">
+                    <a href="https://jinnyk015.github.io/momentom-clone/" target="_blank"><button>Live</button></a>
+                    <a href="https://github.com/JinnyK015/momentom-clone" target="_black"><button>Code</button></a>
+                  </div>
+                </div>
+              </div>
+            </li>
 
-            <ul class="silder__container" id ="silder">
-
-                <li class="project__item" id ="slide_project02">
-                    <div class="project__container">
-                        <video autoplay loop muted class="video__block">
-                            <source src="./img/project/labtop_crome.mp4" type="video/mp4"> </video>
-                        <div class="project__detail">
-                            <div class="detail__column">
-                                <p class="project__tool">HTML / CSS / Vanila JS / API </p>
-                                <h3 class="project__name">Chrome Momentum WebSite</h3>
-                                <p class="project__summry">Using HTML, CSS and vanila JS "crome" clone coding.</p>
-                            </div>
-                            <div class="detail__column">
-                                <a href="https://jinnyk015.github.io/momentom-clone/"  target="_blank"><button>Live</button></a> 
-                                <a href="https://github.com/JinnyK015/momentom-clone" target="_black"><button>Code</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="project__item" id ="slide_project01">
-                    <div class="project__container">
-                        <video autoplay loop muted class="video__block"><source src="img/project/mobile_pawpawtalk.mp4" type="video/mp4"> </video>
-                        <!-- explain about project -->
-                        <div class="project__detail">
-                            <div class="detail__column">
-                                <p class="project__tool">HTML / CSS</p>
-                                <h3 class="project__name">Messenger App</h3>
-                                <p class="project__summry">I built a messenger app based on "KaKao talk". I learn through this project about HTML, CSS animation, transition, tranfrom and media qurey.</p>
-                            </div>
-                            <!-- link to live & github -->
-                            <div class="detail__column">
-                                <a href="https://jinnyk015.github.io/pawpawtalk_practice/"  target="_blank"><button>Live</button></a> 
-                                <a href="https://github.com/JinnyK015/pawpawtalk_practice" target="_black"><button>Code</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+            <li class="project__item" id="slide_project01">
+              <div class="project__container">
+                <video autoplay loop muted class="video__block">
+                  <source src="img/project/mobile_pawpawtalk.mp4" type="video/mp4" />
+                </video>
+                <!-- explain about project -->
+                <div class="project__detail">
+                  <div class="detail__column">
+                    <p class="project__tool">HTML / CSS</p>
+                    <h3 class="project__name">Messenger App</h3>
+                    <p class="project__summry">
+                      I built a messenger app based on "KaKao talk". I learn through this project about HTML, CSS
+                      animation, transition, tranfrom and media qurey.
+                    </p>
+                  </div>
+                  <!-- link to live & github -->
+                  <div class="detail__column">
+                    <a href="https://jinnyk015.github.io/pawpawtalk_practice/" target="_blank"><button>Live</button></a>
+                    <a href="https://github.com/JinnyK015/pawpawtalk_practice" target="_black"><button>Code</button></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
         <button class="slide__arrow silde__right"><i class="fas fa-chevron-right fa-2x silde__right"></i></button>
-
-  
-
-    </div>
-    <div class="slide__navBtn">
+      </div>
+      <div class="slide__navBtn">
         <button class="slide__btn" id="project__02"></button>
         <button class="slide__btn" id="project__01"></button>
-    </div>
+      </div>
 
- 
-   <!--      <div class="work__project">
+      <!--      <div class="work__project">
 
             <div class="work__projects">
                 <a href="https://jinnyk015.github.io/js-paint/" class="project" target="_blank">
@@ -243,57 +278,54 @@
                 </a>
             </div>
         </div>-->
- 
-</section>
+    </section>
 
-<!-- about -->
-<section id="about" class="section">
-    <div class="section__container">
+    <!-- about -->
+    <section id="about" class="section">
+      <div class="section__container">
         <h1 class="sub__title">About me</h1>
         <h3 class="sub__contents">
-            I have always pushed myself to learn new skills. I love being productive. <br/>
-            My goal is to code simple, efficient and intuitive websites and apps. <br/>
-            I’m interested in making eye-catching animations. <br/>
-            I'm from Korea, but I am based in Auckland, New Zealand. <br/>
-            I have a background in fine arts and supply chain management. <br/>
-            I enjoy running, board games and rock climbing. <br/>
+          I have always pushed myself to learn new skills. I love being productive. <br />
+          My goal is to code simple, efficient and intuitive websites and apps. <br />
+          I’m interested in making eye-catching animations. <br />
+          I'm from Korea, but I am based in Auckland, New Zealand. <br />
+          I have a background in fine arts and supply chain management. <br />
+          I enjoy running, board games and rock climbing. <br />
         </h3>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- coneection -->
-<section id="connect" class="section">
-    <div class="section__container">
+    <!-- coneection -->
+    <section id="connect" class="section">
+      <div class="section__container">
         <h1 class="sub__title">Connect</h1>
         <h3 class="sub__subtitle">Get in touch</h3>
-            <div class="direct__mail">
-                <form id ="contectForm" class="direct__form" action="https://formspree.io/f/mgerljbw" method="POST">
-                    <input type="text" id="nameInput" name ="name" placeholder="Your Name*" required>
-                    <input type="email" id="emailInput" name="email" placeholder="Your Email*" required>
-                    <input type="text" id="subjectInput" name="subject" placeholder="Subject*" required>
-                    <textarea name="message" id="messageInput" rows="3" placeholder="Your Message*" required></textarea>
-                    <button type="submit">SEND</button>
-                </form>
-                    <div id="direct__mail-status"></div>
-            </div>
+        <div class="direct__mail">
+          <form id="contectForm" class="direct__form" action="https://formspree.io/f/mgerljbw" method="POST">
+            <input type="text" id="nameInput" name="name" placeholder="Your Name*" required />
+            <input type="email" id="emailInput" name="email" placeholder="Your Email*" required />
+            <input type="text" id="subjectInput" name="subject" placeholder="Subject*" required />
+            <textarea name="message" id="messageInput" rows="3" placeholder="Your Message*" required></textarea>
+            <button type="submit">SEND</button>
+          </form>
+          <div id="direct__mail-status"></div>
+        </div>
         <div class="home__icons connect__icon">
-            <a target="_blank" href="https://www.linkedin.com/in/jinhee-kim-b336aa183/"><i class="fab fa-linkedin"></i></a>
-            <a target="_blank" href="https://github.com/JinnyK015"><i class="fab fa-github-square"></i></a>
-            <a target="_blank" href="mailto:vedaforest@gmail.com"><i class="far fa-envelope"></i></a>
-            <a target="_blank" href="https://twitter.com/jinnyk015"><i class="fab fa-twitter-square"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/jinhee-kim-b336aa183/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a target="_blank" href="https://github.com/JinnyK015"><i class="fab fa-github-square"></i></a>
+          <a target="_blank" href="mailto:jinnykim015@gmail.com"><i class="far fa-envelope"></i></a>
+          <a target="_blank" href="https://twitter.com/jinnyk015"><i class="fab fa-twitter-square"></i></a>
         </div>
 
-        <p class="contact__right">
-            2021 JinnyK - All rights reserved
-        </p>
-    </div>
-</section>
+        <p class="contact__right">2021 JinnyK - All rights reserved</p>
+      </div>
+    </section>
 
-<!--arrow up to top-->
-<button class="arrowTop" data-link="#home">
-    <i class="fas fa-chevron-up"></i>
-</button>
-
-
-</body>
+    <!--arrow up to top-->
+    <button class="arrowTop" data-link="#home">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+  </body>
 </html>

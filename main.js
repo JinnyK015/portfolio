@@ -209,10 +209,8 @@ nav_menu.addEventListener('click', (event) => {
 
 
 // navbar toggle menu down
-const menuicon = document.querySelector("#menu__icon");
-
-menuicon.addEventListener('click', (e)=>{
-    if(menuicon.checked === true){
+checkBox.addEventListener('click', (e)=>{
+    if(checkBox.checked === true){
         nav_menu.classList.add('open');
     } else {
         nav_menu.classList.remove('open');
