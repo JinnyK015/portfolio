@@ -374,6 +374,9 @@ button {
     font-size: var(--font-medium);
     align-self: center;
   }
+  #connect {
+    height: 100%;
+  }
 
   #contectForm {
     grid-template-columns: repeat(1, 1fr);
@@ -384,6 +387,9 @@ button {
   .direct__form #messageInput {
     grid-column: 1 / span 2;
   }
+
+
+
 }
 
 @media screen and (min-width: 1200px) {
