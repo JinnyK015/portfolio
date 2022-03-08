@@ -4,6 +4,8 @@
 @import "css/skill.css";
 @import "css/project.css";
 @import "css/contect.css";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,800;0,900;1,700;1,900&display=swap');
+
 
 /* Global */
 :root {
@@ -24,13 +26,14 @@
   --font-lrg: 2.6rem;
   --font-semi-lrg: 2.25rem;
   --font-medium: 1.75rem;
-  --font-regular: 18px;
-  --font-small: 16px;
+  --font-semi-med: 1.50rem;
+  --font-regular: 1.25rem;
+  --font-small: 1rem;
   --font-micro: 14px;
 
   /* Font weight */
-  --weight-bold: 700;
-  --weight-semi-bold: 400;
+  --weight-bold: 500;
+  --weight-semi-bold: 300;
   --weight-regular: 300;
   --weight-thin: 100;
 
@@ -61,7 +64,7 @@ h3 {
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family:  'Poppins', 'Raleway', sans-serif;
 }
 
 a {
@@ -141,10 +144,14 @@ button {
   width: 100%;
   padding: 1.5rem;
   text-align: start;
-  font-size: var(--font-regular);
 }
 
+#about .sub__contents > li{
+  padding: .5rem;
+  font-size: var(--font-semi-med)
+}
 /* ✳✳❇❇❇❇❇❇❇❇❇✳✳✳✳✳✳ */
+/* For tablet and common size phone */
 @media screen and (max-width: 900px) {
   .section {
     padding: 0;
@@ -238,6 +245,7 @@ button {
   /* project section */
   #projects {
     width: 100%;
+    height:100%;
   }
   #projects .section__container {
     min-width: 100%;
@@ -298,16 +306,17 @@ button {
   }
 }
 
-/* Below 425px screen width */
+/* For Below 425px screen width eg. Iphone mini. Iphone4 */
 @media screen and (max-width: 600px), (max-height: 620px) {
   #home {
     padding-top: 0;
-    height: 110vh;
+    height: 100%;
   }
   .home__column {
     height: 100%;
   }
   .home__block {
+    margin-top:5rem;
     height: 40%;
     align-items: flex-end;
     position: relative;
@@ -317,6 +326,7 @@ button {
   }
 
   .home__icons {
+    margin: 2rem 0;
     font-size: var(--font-lrg);
   }
 
@@ -335,6 +345,9 @@ button {
     margin-bottom: 2rem;
   }
 
+  #projects {
+    height: 100%;
+  }
   .project__detail {
     margin: 0;
     width: 100%;
@@ -363,6 +376,9 @@ button {
     margin: 0;
   }
 
+  #about {
+    height: 100%
+  }
   .arrowTop {
     width: 3em;
     height: 3em;
@@ -374,6 +390,9 @@ button {
     font-size: var(--font-medium);
     align-self: center;
   }
+  #connect {
+    height: 100%;
+  }
 
   #contectForm {
     grid-template-columns: repeat(1, 1fr);
@@ -384,8 +403,13 @@ button {
   .direct__form #messageInput {
     grid-column: 1 / span 2;
   }
+
+
+
 }
 
+
+/* For Massive Screen */
 @media screen and (min-width: 1200px) {
   .home__text-container {
     display: flex;

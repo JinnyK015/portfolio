@@ -2,6 +2,7 @@
 
 #connect {
   background-color: var(--color-grey);
+  height: 100vh;
 }
 #connect >.section__container > .sub__subtitle{
   color: var(--color-dark-white);
