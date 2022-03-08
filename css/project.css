@@ -1,6 +1,7 @@
 /* projects */
 #projects {
   background-color: var(--color-light-white);
+  height: 100vh;
 }
 #projects .section__container{
   display: flex;
