@@ -1,7 +1,7 @@
 /* projects */
 #projects {
   background-color: var(--color-light-white);
-  height: 100vh;
+  height: 100%;
 }
 #projects .section__container{
   display: flex;
@@ -18,57 +18,48 @@
 
 .project__main {
   position: relative;
-  width: 800px;
-  height: 600px;
-  overflow: hidden;
-}
-
-.silder__container {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 200%;
-  height: 100%;
-  display: flex;
-  transition: transform 0.7s ease-out;
+  min-width: 800px;
+  padding: 2rem;
 }
 
 .project__item {
+  display: flex;
   flex-basis: auto;
-  margin: 0 auto;
+  margin: 1rem auto;
   width: 100%;
+  border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .project__container {
   display: flex;
-  position: relative;
-  margin: 0 30px;
   width: 100%;
-  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.project__img {
+  
 }
 
 .video__block {
-  position: absolute;
-  width: 50%;
-  border-radius: 20px;
-  top: 50%;
-  transform: translateY(-50%);
+  width: 20rem;
+  border-radius: 1.5rem;
+  margin: 1rem;
 }
 
 .video__block source{
   max-width: 100%;
+  border-radius: 1.5rem;
 }
 
 .project__detail {
-  margin-left: 8%;
-  width: 84%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 2rem;
   text-align: start;
   align-items: center;
   padding: 2em;
-  background-color: rgba(255, 255, 255, 0.3);
 }
+
 .project__tool {
   letter-spacing: 0.1em;
   color: var(--color-grey);
@@ -81,30 +72,29 @@
 }
 
 .project__detail .project__summry {
-  margin: 20px 0;
+  margin: 1.5rem 0;
   letter-spacing: 0.15em;
   font-weight: var(--weight-regular);
-  white-space: pre-wrap;
   line-height: 2;
 }
 
 .project__detail .detail__column:first-child {
   width: 100%;
   height: 90%;
-  padding-left: 54%;
 }
 
 .project__detail .detail__column:last-child {
-  height: 10%;
   display: flex;
   justify-content: flex-end;
 }
-.detail__column:last-child button {
+
+.detail__column:last-child a {
   letter-spacing: 0.1em;
-  font-size: var(--font-regular);
-  font-weight: var(--weight-semi-bold);
+  font-size: var(--font-sma);
+  font-weight: var(--weight-bold);
   text-decoration: underline;
   margin-left: 1rem;
+  color:var(--color-dark-grey);
 }
 .slide__btn {
   margin: 2rem 1rem;
