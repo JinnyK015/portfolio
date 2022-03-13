@@ -7,7 +7,7 @@
   display: flex;
   justify-content:center;
   text-align: center;
-  min-width:850px;
+  width:54rem;
   padding-bottom: 0;
 }
 
@@ -46,9 +46,12 @@
 }
 .video__block {
   width: 20rem;
-  max-height: 16rem;
+  max-height: 20rem;
   border-radius: 1.5rem;
   margin: 1rem;
+}
+.pawpawtalk {
+ margin : auto 1rem;
 }
 
 .video__block source{
@@ -80,6 +83,7 @@
   letter-spacing: 0.15em;
   font-weight: var(--weight-regular);
   line-height: 2;
+  
 }
 
 .project__detail .detail__column:first-child {
