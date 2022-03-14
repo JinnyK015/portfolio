@@ -3,13 +3,7 @@
   background-color: var(--color-light-white);
   height: 100%;
 }
-#projects .section__container{
-  display: flex;
-  justify-content:center;
-  text-align: center;
-  width:54rem;
-  padding-bottom: 0;
-}
+
 
 .display_none{
   opacity: 0;
@@ -18,8 +12,8 @@
 
 .project__main {
   position: relative;
-  min-width: 800px;
-  padding: 2rem;
+  width: 100%;
+  
 }
 
 .project__item {
@@ -49,9 +43,6 @@
   max-height: 20rem;
   border-radius: 1.5rem;
   margin: 1rem;
-}
-.pawpawtalk {
- margin : auto 1rem;
 }
 
 .video__block source{

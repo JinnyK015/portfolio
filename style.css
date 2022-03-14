@@ -352,6 +352,7 @@ button {
     min-width: 0%;
     height: 97%;
   }
+  
 
   .project__detail .detail__column:first-child {
     display: flex;
