@@ -34,7 +34,7 @@
 }
 
 .project__img {
-  width: 20rem;
+  max-width: 20rem;
   border-radius: 1.5rem;
   margin: 1rem;
 }

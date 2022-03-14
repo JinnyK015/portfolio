@@ -249,28 +249,22 @@ button {
     width: 100%;
     height:100%;
   }
-  #projects .section__container {
-    width: 100%;
-    margin: 0;
-  }
   .project__main {
     width: 80%;
-   height: 100%;
+    height: 100%;
+    margin: 0 auto;
   }
+  
+
   .project__item {
     width: 100%;
-    height: 40rem;
+    height: 32rem;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .video__block {
-    position: static;
-    top: 0;
-    transform: translateY(0);
-    width: 90%;
-  }
+
   .video__block source {
     width: 100%;
   }
@@ -300,6 +294,10 @@ button {
   .project__detail .project__summry {
     margin: 0;
   }
+  #about .sub__contents > li {
+  font-size: var(--font-regular);
+  }
+
 }
 
 /* For Below 425px screen width eg. Iphone mini. Iphone4 */
@@ -344,15 +342,29 @@ button {
   #projects {
     height: 100%;
   }
+  #projects .section__container {
+    width: 100%;
+  }
 
-  .project__main,
+  .project__item {
+    height: 36rem;
+  }
+
+  .video__block {
+    width: 14rem;
+  }
+  .project__img {
+    max-width: 16rem;
+    border-radius: 1.5rem;
+    margin: 0;
+  }
   .project__detail {
     margin: 0;
     padding:0;
     min-width: 0%;
     height: 97%;
   }
-  
+
 
   .project__detail .detail__column:first-child {
     display: flex;
@@ -362,7 +374,6 @@ button {
   }
   .project__detail .detail__column:last-child {
     display: flex;
-  
     right: 1rem;
     height: 5%;
     justify-content: end;
@@ -372,11 +383,16 @@ button {
     margin: 0.5rem 0;
   }
   .project__detail .project__summry {
-    margin: 0;
+    margin-top: 1rem;
+    font-size: var(--font-micro);
+    line-height:1.8;
   }
 
   #about {
     height: 100%
+  }
+  #about .sub__contents > li {
+    font-size: var(--font-small);
   }
   .arrowTop {
     width: 3em;
