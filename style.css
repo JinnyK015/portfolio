@@ -300,6 +300,8 @@ button {
 
 }
 
+
+
 /* For Below 425px screen width eg. Iphone mini. Iphone4 */
 @media screen and (max-width: 600px), (max-height: 620px) {
   #home {
