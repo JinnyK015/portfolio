@@ -1,11 +1,11 @@
 /* contact me */
 
 #connect {
-  background-color: var(--color-grey);
+  background-color: var(--color-dark-white);
   height: 100vh;
 }
 #connect >.section__container > .sub__subtitle{
-  color: var(--color-dark-white);
+  /* color: var(--color-dark-white); */
 }
 .connect__icon {
   width: 100%;
@@ -13,7 +13,7 @@
   align-items: center;
 }
 .connect__icon i {
-  color:var(--color-dark-white);
+  color:var(--color-grey);
 }
 /* direct Form */
 .direct__mail {
@@ -27,7 +27,7 @@
 
 .direct__form #messageInput,
 .direct__form input {
-  border: 2px solid var(--color-dark-white);
+  border: 2px solid var(--color-light-white);
   font-size: var(--font-regular);
   padding: 10px 20px;
   width: 100%;
