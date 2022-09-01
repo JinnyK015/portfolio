@@ -4,8 +4,7 @@
 @import "css/skill.css";
 @import "css/project.css";
 @import "css/contect.css";
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,800;0,900;1,700;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,800;0,900;1,700;1,900&display=swap");
 
 /* Global */
 :root {
@@ -26,7 +25,7 @@
   --font-lrg: 2.6rem;
   --font-semi-lrg: 2.25rem;
   --font-medium: 1.75rem;
-  --font-semi-med: 1.50rem;
+  --font-semi-med: 1.5rem;
   --font-regular: 1.25rem;
   --font-small: 1rem;
   --font-micro: 14px;
@@ -64,7 +63,7 @@ h3 {
 
 body {
   margin: 0;
-  font-family:  'Poppins', 'Raleway', sans-serif;
+  font-family: "Poppins", "Raleway", sans-serif;
 }
 
 a {
@@ -142,15 +141,12 @@ button {
 }
 #about .sub__contents {
   width: 100%;
-  padding: 1.5rem;
+  margin: 0;
+  padding: 0.5rem;
   text-align: start;
+  font-size: var(--font-regular);
+  line-height: 1.3;
 }
-
-#about .sub__contents > li{
-  padding: .5rem;
-  font-size: var(--font-semi-med)
-}
-
 
 /* ✳✳❇❇❇❇❇❇❇❇❇✳✳✳✳✳✳ */
 /* For tablet and common size phone */
@@ -247,14 +243,13 @@ button {
   /* project section */
   #projects {
     width: 100%;
-    height:100%;
+    height: 100%;
   }
   .project__main {
     width: 80%;
     height: 100%;
     margin: 0 auto;
   }
-  
 
   .project__item {
     width: 100%;
@@ -264,14 +259,13 @@ button {
     align-items: center;
   }
 
-
   .video__block source {
     width: 100%;
   }
 
   .project__item .project__detail {
     margin: 0;
-    padding: .5rem;
+    padding: 0.5rem;
     width: 90%;
   }
 
@@ -294,13 +288,13 @@ button {
   .project__detail .project__summry {
     margin: 0;
   }
-  #about .sub__contents > li {
-  font-size: var(--font-regular);
+  #about {
+    padding: 0 2rem;
   }
-
+  #about .sub__contents {
+    font-size: var(--font-regular);
+  }
 }
-
-
 
 /* For Below 425px screen width eg. Iphone mini. Iphone4 */
 @media screen and (max-width: 600px), (max-height: 620px) {
@@ -312,7 +306,7 @@ button {
     height: 100%;
   }
   .home__block {
-    margin-top:5rem;
+    margin-top: 5rem;
     height: 40%;
     align-items: flex-end;
     position: relative;
@@ -362,11 +356,10 @@ button {
   }
   .project__detail {
     margin: 0;
-    padding:0;
+    padding: 0;
     min-width: 0%;
     height: 97%;
   }
-
 
   .project__detail .detail__column:first-child {
     display: flex;
@@ -387,11 +380,12 @@ button {
   .project__detail .project__summry {
     margin-top: 1rem;
     font-size: var(--font-micro);
-    line-height:1.8;
+    line-height: 1.8;
   }
 
   #about {
-    height: 100%
+    height: 100vh;
+    padding: 0 1rem;
   }
   #about .sub__contents > li {
     font-size: var(--font-small);
@@ -420,11 +414,7 @@ button {
   .direct__form #messageInput {
     grid-column: 1 / span 2;
   }
-
-
-
 }
-
 
 /* For Massive Screen */
 @media screen and (min-width: 1200px) {
